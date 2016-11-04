@@ -6,8 +6,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="wrapper center clearfix">
-    <header class="clearfix">
+  <div class="header-wrapper">
+    <header class="center clearfix header">
       <a class="logo">
         <p>Путешествия по Азии</p>
       </a>
@@ -17,7 +17,7 @@
         <p> +9-0123-456-890</p>
         <a href="mailto:info@asia-holidays.com">info@asia-holidays.com</a> <!-- Проверить синтаксис ссылки -->
       </div>
-      <div class="right countries clearfix">
+      <div class="right countries">
         <a href="">
           <img src="img/i_flag.jpg" alt="India">
           <p>Индия</p>
@@ -44,17 +44,18 @@
         </a>
       </div>
     </header>
-    <main>
-      Main:
-      <menu>menu</menu>
-      <aside class="left">aside left</aside>
-      <section>section</section>
-      <aside class="right">aside right</aside>
-    </main>
-    <footer>
-      Footer:
-      <p class="center">Copyright&copy; asia-holidays.com. 2010</p>
-    </footer>
   </div>
+    <div class="main-wrapper">
+      <main class="center clearfix main">
+        <menu>menu</menu>
+        <aside class="left">aside left</aside>
+        <section>section</section>
+        <aside class="right">aside right</aside>
+      </main>
+    </div>
+  <footer class="footer">
+    <p class="center">Copyright&copy; asia-holidays.com. 2010</p>
+  </footer>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
