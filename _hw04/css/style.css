@@ -1,21 +1,6 @@
-/*
-(.) img: изображения, иконки и т.п.
-(!) структура елементов (HTML)
-(!) тексты (HTML)
-(!) позиции, отступы елементов
-(!) img: фоны
-(!) font face
-(!) font size
-(!) font color
-(!) цвета элементов, границы
-*/
-
 @import "reset.css";
 
-.clr{/*После сфлоаченных блоков добавляем <div class="clr"> без содержимого и он прекратит сфлоачивание. */
-  clear:both;
-}
-.clearfix::after{/*Добавляем этот класс к parent-элементу, у которого есть только сфлоачиваемые дети. Это прекратит сфлоачивание. */
+.clearfix::after{
   content: '';
   display: block;
   clear: both;
@@ -24,18 +9,14 @@
 html{
   background-color: #0c739f;
 }
-
 .right {
   display: block;
   float: right;
 }
-.left {
-  display: block;
-  float: left;
-}
 .center {
   margin: auto;
 }
+
 
 /*HEADER*/
 .header-wrapper {
@@ -50,6 +31,8 @@ html{
   box-sizing: border-box;
   background-color: #FFF;
   color: #128aa7;
+  -webkit-box-shadow: 0 0 8px #303030;
+          box-shadow: 0 0 8px #303030;
 }
 .header a {
   color: #128AA7;
@@ -96,7 +79,6 @@ a.logo p{
 }
 .countries>a {
   display: table-cell;
-  /*padding: 0 7px;*/
   width: 56px;
   float: left;
   font: 0.625em Arial,sans-serif;
@@ -106,6 +88,7 @@ a.logo p{
   text-align: center;
 }
 
+
 /*MAIN*/
 .main-wrapper {
   width: 100vw;
@@ -114,10 +97,8 @@ a.logo p{
 }
 .main {
   width: 1000px;
-  min-height: 1000px;
-  /*background: #fff url(../img/photo.jpg) center top 176px no-repeat fixed;*/
-  /*background: #fff url(../img/photo.jpg) center top no-repeat;*/
-  /*padding-top: 237px;*/
+  -webkit-box-shadow: 0 0 8px #303030;
+          box-shadow: 0 0 8px #303030;
 }
 .main-photo {
   border-top: 1px solid #128aa7;
@@ -138,7 +119,6 @@ a.logo p{
   border-top: 1px solid #CACBCB;
   border-bottom: 1px solid #000;
   width: 1000px;
-  /*height: 28px;*/
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -182,8 +162,68 @@ a.logo p{
   width: 100%;
 }
 
+.container {
+  width: 100%;
+  overflow: hidden; 
+  color: #424C43;
+  font: 0.875em Tahoma,sans-serif;
+  line-height: 1.6em;
+}
+h2 {
+  font-size: 1.125em;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.aside-left {
+  width: 21%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+  background: #edeef0;
+}
+.aside-left>p {
+  padding: 0 15px;
+}
+.center-column {
+  width: 58%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+  background: #fff;
+}
+.aside-right {
+  width: 21%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+  background: #edeef0;
+}
+.aside-right>p {
+  padding: 0 15px;
+}
+.aside-right>p:last-child,
+.aside-left>p:last-child {
+  padding-bottom: 10px;
+}
+
+
 /*FOOTER*/
 .footer {
   width: 100vw;
+  height: 34px;
+}
+.footer>p {
   text-align: center;
+  color: #fff;
+  line-height: 34px;
 }
