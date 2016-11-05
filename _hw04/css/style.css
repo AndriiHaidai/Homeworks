@@ -114,11 +114,72 @@ a.logo p{
 }
 .main {
   width: 1000px;
-  min-height: 500px;
-  border-top: 1px solid #128aa7;
+  min-height: 1000px;
   /*background: #fff url(../img/photo.jpg) center top 176px no-repeat fixed;*/
-  background: #fff url(../img/photo.jpg) center top no-repeat;
-  padding-top: 237px;
+  /*background: #fff url(../img/photo.jpg) center top no-repeat;*/
+  /*padding-top: 237px;*/
+}
+.main-photo {
+  border-top: 1px solid #128aa7;
+  border-bottom: 1px solid #128aa7;
+  display: block;
+}
+.nav {
+  color: #fff;
+  font: 0.875em Tahoma,sans-serif;
+}
+.nav a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+.main-menu {
+  background: linear-gradient(to bottom, #373737, #303030);
+  border-top: 1px solid #CACBCB;
+  border-bottom: 1px solid #000;
+  width: 1000px;
+  /*height: 28px;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  -webkit-box-shadow: 0 0 8px #303030;
+          box-shadow: 0 0 8px #303030;
+}
+.main-menu-item {
+  position: relative;
+  height: 23px;
+  padding: 5px 30px 0 10px;
+}
+.main-menu-item:hover {
+  background-color: #000;
+}
+.main-menu-item:hover>.submenu {
+  display: flex;
+}
+.triangle {
+  font-size: 9px;
+  vertical-align: 1px;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  height: 125px;
+  min-width: 150px;
+  border-top: 1px solid #000;
+  white-space: nowrap;
+  background-color: #303030;
+  text-align: left;
+  flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-shadow: 0 2px 8px #303030;
+          box-shadow: 0 2px 8px #303030;
+}
+.submenu-link {
+  padding-left: 10px;
+  display: block;
+  width: 100%;
 }
 
 /*FOOTER*/
