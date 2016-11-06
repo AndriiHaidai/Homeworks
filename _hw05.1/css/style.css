@@ -1,0 +1,53 @@
+/*
+(!) img: изображения, фоны, иконки и т.п.
+(!) структура елементов (HTML)
+(!) тексты (HTML)
+(!) позиции, отступы елементов
+(!) font face
+(!) font size
+(!) font color
+(!) цвета элементов, границы
+*/
+
+@import "reset.css";
+
+.clr{/*После сфлоаченных блоков добавляем <div class="clr"> без содержимого и он прекратит сфлоачивание. */
+  clear:both;
+}
+.clearfix:after{/*Добавляем этот класс к parent-элементу, у которого есть только сфлоачиваемые дети. Это прекратит сфлоачивание. */
+  content: "";
+  display: table;
+  clear: both;
+}
+html {
+  background: url(../img/bg-main.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  min-width: 560px;
+  min-height: 649px; /*form613+header36*/
+  height: 100vh;
+}
+
+/*HEADER*/
+.header {
+  background: #fff url(../img/bg-top.jpg) top left repeat-x;
+  position: fixed;
+  top: 0;
+  height: 36px;
+  width: 100vw;
+}
+
+
+/*MAIN*/
+.main {
+  position: fixed;
+  left: 50%;
+  margin-left: -280px;
+  top: 50%;
+  margin-top: -288px; /*half of height -306 + header +36*/
+  border: 1px solid;
+  width: 560px;
+  height: 613px;
+  
+}
