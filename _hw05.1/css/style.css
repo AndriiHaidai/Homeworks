@@ -1,5 +1,6 @@
 /*
-(!) img: изображения, фоны, иконки и т.п.
+(!) img: изображения, фоны
+(!) img: иконки и т.п.
 (!) структура елементов (HTML)
 (!) тексты (HTML)
 (!) позиции, отступы елементов
@@ -27,6 +28,8 @@ html {
   min-width: 560px;
   min-height: 649px; /*form613+header36*/
   height: 100vh;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.875em;
 }
 
 /*HEADER*/
@@ -37,7 +40,71 @@ html {
   height: 36px;
   width: 100vw;
 }
-
+nav {
+  float: right;
+}
+ul {
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.usermenu {
+  margin-right: 20px;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.usermenu-item {
+  display: inline-flex;
+  padding: 0 15px;
+  box-sizing: border-box;
+  line-height: 36px;
+  border: 1px solid transparent;
+  border-top: none;
+  color: #fefefe;
+  text-decoration: none;
+}
+.usermenu-item:hover,
+.usermenu-item:active {
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#64a8e3), to(#4299d2)) 0 1 1;
+  -webkit-border-image:    -webkit-linear-gradient(#64a8e3, #4299d2) 0 1 1;
+     -moz-border-image:       -moz-linear-gradient(#64a8e3, #4299d2) 0 1 1;
+       -o-border-image:         -o-linear-gradient(#64a8e3, #4299d2) 0 1 1;
+          border-image: linear-gradient(to bottom, #64a8e3, #4299d2) 0 1 1;
+  border-top: none;
+  -webkit-border-radius: 1px;
+          border-radius: 1px;
+  background: linear-gradient(to bottom, #51b1dc, #2a7ab5);
+  color: #fff;
+}
+.flag {
+  padding: 7px 7px 0 3px;
+  height: 23px;
+}
+.hl {
+  content: '';
+  height: 31px;
+  border-left: 1px solid #56a2dc;
+  display: inline-flex;
+}
+.nav-item {
+  display: inline-flex;
+  padding: 0 13px;
+  box-sizing: border-box;
+  height: 36px;
+  line-height: 36px;
+  color: #60B5ED;
+  text-decoration: none;
+  line-height: 36px;
+}
+.nav-item:last-child {
+  padding-right: 20px;
+}
+.nav-item:hover {
+  color: #FFF;
+  background-color: #4EABDA;
+}
 
 /*MAIN*/
 .main {
