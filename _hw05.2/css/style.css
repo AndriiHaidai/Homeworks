@@ -1,11 +1,7 @@
 @import "reset.css";
 
-table,
-tr,
-td {
-  border: 4px solid #000;
-  background-color: #fff;
-  box-sizing: border-box;
+html {
+  background-color: #BFBFBF;
 }
 table {
   width: 500px;
@@ -16,7 +12,16 @@ table {
   left: 50vw;
   margin-left: -250px;
   border: 0;
-  border-collapse: separate;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+td {
+  border: 4px solid #000;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+table tr:first-child {
+  border-top: 0;
 }
 .c1 {
   width: 54px;
