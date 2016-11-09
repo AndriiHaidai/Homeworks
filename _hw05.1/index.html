@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="fonts/fontawesome-webfont.svg">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -17,7 +18,7 @@
             </a>
           </li>
           <li>
-            <a href="" class="usermenu-item">Ola! Entrar ou Cadastre-se</a>
+            <a href="" class="usermenu-item-active">Ola!&nbsp;<span class="link">Entrar</span>&nbsp;ou&nbsp;<span class="link"> Cadastre-se</span></a>
           </li>
         </ul>
       </nav>
@@ -32,12 +33,29 @@
       </nav>
     </header>
     <main class="main">
-    <div class="form-header">
-      <p>Cadastre-se</p>
-    </div>
-    <form action="">
-      
-    </form>
+      <div class="form-container form-header">
+        <h1>Cadastre-se</h1>
+      </div>
+      <div class="form-header-separator"></div>
+      <div class="form-container">
+
+        <a href="" class="btn-facebook"></a>
+        <form action="" method="post" class="reg-form">
+          <label class="btn-size"><span class="reg-separator"></span> &nbsp; OU &nbsp; <span class="reg-separator"></span></label>
+          <input class="btn-size" type="text" name="first-name" placeholder="First Name">
+          <input class="btn-size" type="text" name="last-name" placeholder="Last Name">
+          <input class="btn-size" type="email" name="email" placeholder="Email Address">
+          <input class="btn-size" type="password" name="password" placeholder="Choose Password">
+          <input class="btn-size" type="password" name="password_confirm" placeholder="Password Confirm">
+          <label class="btn-size checkbox">
+            <input type="checkbox" name="Send_me_updates">
+            Send me Youbike updates and tips
+          </label>
+          <input class="submit" type="submit" value="Create my Account">
+          
+        </form>
+        <p class="legal">By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy.</p>
+      </div>
     </main>
   </body>
 </html>
