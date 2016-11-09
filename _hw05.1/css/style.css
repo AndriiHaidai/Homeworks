@@ -1,23 +1,4 @@
-/*{
-(!) img: изображения, фоны
-(!) img: иконки и т.п.
-(!) структура елементов (HTML)
-(!) тексты (HTML)
-(!) позиции, отступы елементов
-(!) font face
-(!) font size
-(!) font color
-(!) цвета элементов, границы
-}*/
-
 @import "reset.css";
-
-/*@font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts/HelveticaNeueLTStd-Md.otf");
-    font-style: normal;
-    font-weight: normal;
-}*/
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('../fonts/helveticaneue-thin-webfont.eot');
@@ -30,15 +11,6 @@
     font-style: normal;
 }
 
-
-.clr{/*После сфлоаченных блоков добавляем <div class="clr"> без содержимого и он прекратит сфлоачивание. */
-  clear:both;
-}
-.clearfix:after{/*Добавляем этот класс к parent-элементу, у которого есть только сфлоачиваемые дети. Это прекратит сфлоачивание. */
-  content: "";
-  display: table;
-  clear: both;
-}
 html {
   background: url(../img/bg-main.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
