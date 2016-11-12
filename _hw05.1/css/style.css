@@ -136,7 +136,7 @@ ul {
 input {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
-.btn-size {
+.btn {
   display: inline-flex;
   width: 276px;
   height: 35px;
@@ -167,14 +167,15 @@ input {
   border-bottom: 1px solid #000;
   width: 119px;
 }
-input.btn-size {
+input.btn {
   background-color: #0e0d0d;
   background-image: linear-gradient(to top, #111 0%, #0e0d0d 100%);
   -webkit-box-shadow: 0 1px 0 #4b4b4b, inset 0 2px 5px rgba(29, 26, 22, 0.2), inset 0 0 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 0 #4b4b4b, inset 0 2px 5px rgba(29, 26, 22, 0.2), inset 0 0 2px rgba(0, 0, 0, 0.1);
   text-indent: 19px;
+  color: #ccc;
 }
-input.btn-size:hover {
+input.btn:hover {
   background-image: linear-gradient(to top, #1b5288 0%, #1b5288 100%);
   -webkit-box-shadow: 0 1px 0 #4b4b4b, inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 0 #4b4b4b, inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1);
