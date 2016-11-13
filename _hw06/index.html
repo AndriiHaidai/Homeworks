@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="header-top"><!-- * -->
-        <div class="contacts"><!-- * -->
-          <img src="img/ico-phone.png" alt="ico-phone.jpg" class="contacts__ico-phone"><!-- * -->
-          <span class="contacts__phone">(044)123-45-67</span><!-- * -->
-          <span class="contacts__phone">(044)567-89-10</span><!-- * -->
+        <div class="contacts">
+          <img src="img/ico-phone.png" alt="ico-phone.jpg" class="contacts__ico-phone">
+          <span class="contacts__phone">(044)123-45-67</span>
+          <span class="contacts__phone">(044)567-89-10</span>
         </div>
-        <form action="#" method="post" class="login-form"><!-- * --> <!-- Вставить 2 фона: градиент + иконка юзера (строка ниже) -->
+        <form action="#" method="post" class="login-form clearfix"><!-- * --> <!-- Вставить 2 фона: градиент + иконка юзера (строка ниже) -->
           <!-- <img src="../img/ico-user.jpg" alt="ico-user.jpg" class="user__ico-user"> -->
-          <i class="login-form__user-ico"></i>
-          <input type="text" name="login" id="login" class="login-form__input">
-          <input type="password" name="password" id="password" class="login-form__input">
+          <span class="login-form__user-ico"></span>
+          <input type="text" name="login" id="login" class="login-form__input login-form__input_fix_1" placeholder="логин">
+          <input type="password" name="password" id="password" class="login-form__input login-form__input_fix_2" placeholder="пароль">
           <input type="submit" value="вход" class="login-form__submit-registrate">
           <input type="button" value="| регистрация" class="login-form__submit-registrate">
           <input type="button" value="забыли пароль?" class="login-form__pwd-restore">
@@ -52,164 +53,251 @@
       <form action="#" class="search search-by-car">
         <label class="search__label">Поиск по автомобилю</label>
         <!-- ДИСКИ -->
-        <label class="search__sublabel">Диски:</label>
-        <label class="select__label">
-          Марка 
-          <span class="select__sublabel">авто:</span>
-          <select name="" class="select">
-            <option value="option1">&nbsp;</option>
-            <option value="option1">option1</option>
-            <option value="option2">option2</option>
-            <option value="option3">option3</option>
-            <option value="option4">option4</option>
-          </select>
-        </label>
-        <label class="select__label">
-          Модель 
-          <span class="select__sublabel">автомобиля:</span>
-          <select name="" class="select">
-            <option value="option1">&nbsp;</option>
-            <option value="option1">option1</option>
-            <option value="option2">option2</option>
-            <option value="option3">option3</option>
-            <option value="option4">option4</option>
-          </select>
-        </label>
-        <label class="select__label">
-          Год выпуска 
-          <span class="select__sublabel">автомобиля:</span>
-          <select name="" class="select">
-            <option value="option1">&nbsp;</option>
-            <option value="option1">option1</option>
-            <option value="option2">option2</option>
-            <option value="option3">option3</option>
-            <option value="option4">option4</option>
-          </select>
-        </label>
-        <label class="select__label">
-          Комплектация:
-          <select name="" class="select">
-            <option value="option1">&nbsp;</option>
-            <option value="option1">option1</option>
-            <option value="option2">option2</option>
-            <option value="option3">option3</option>
-            <option value="option4">option4</option>
-          </select>
-        </label>
+        <label class="search__sublabel search__sublabel-discs">Диски:</label>
+        <div class="search-by-car__left-block">
+          <label class="select__label">Марка <span class="select__sublabel">авто:</span>
+            <select class="select">
+              <option value="option0">&nbsp;</option>
+              <option value="option1">option1</option>
+              <option value="option2">option2</option>
+            </select>
+          </label>
+          <label class="select__label">Модель <span class="select__sublabel">автомобиля:</span>
+            <select class="select">
+              <option value="option0">&nbsp;</option>
+              <option value="option1">option1</option>
+              <option value="option2">option2</option>
+            </select>
+          </label>
+          <label class="select__label">Год выпуска <span class="select__sublabel">автомобиля:</span>
+            <select class="select-year">
+              <option value="option0">&nbsp;</option>
+              <option value="option1">option1</option>
+              <option value="option2">option2</option>
+            </select>
+          </label>
+          <label class="select__label">Комплектация:
+            <select class="select">
+              <option value="option0">&nbsp;</option>
+              <option value="option1">option1</option>
+              <option value="option2">option2</option>
+            </select>
+          </label>
+        </div>
         <!-- ШИНЫ -->
-        <label class="search__sublabel">Шины:</label>
-        <label class="select__label">
-          Марка 
-          <span class="select__sublabel">авто:</span>
-          <select name="" class="select">
-            <option value="option1">&nbsp;</option>
-            <option value="option1">option1</option>
-            <option value="option2">option2</option>
-            <option value="option3">option3</option>
-            <option value="option4">option4</option>
-          </select>
-        </label>
-        <label class="select__label">
-          Модель 
-          <span class="select__sublabel">автомобиля:</span>
-          <select name="" class="select">
-            <option value="option1">&nbsp;</option>
-            <option value="option1">option1</option>
-            <option value="option2">option2</option>
-            <option value="option3">option3</option>
-            <option value="option4">option4</option>
-          </select>
-        </label>
-        <label class="select__label">
-          Год выпуска 
-          <span class="select__sublabel">автомобиля:</span>
-          <select name="" class="select">
-            <option value="option1">&nbsp;</option>
-            <option value="option1">option1</option>
-            <option value="option2">option2</option>
-            <option value="option3">option3</option>
-            <option value="option4">option4</option>
-          </select>
-        </label>
-        <label class="select__label">
-          Комплектация:
-          <select name="" class="select">
-            <option value="option1">&nbsp;</option>
-            <option value="option1">option1</option>
-            <option value="option2">option2</option>
-            <option value="option3">option3</option>
-            <option value="option4">option4</option>
-          </select>
-        </label>
-        <input type="submit" value="поиск..." class="select__submit"></input>
+        <label class="search__sublabel search__sublabel-tires">Шины:</label>
+        <div class="search-by-car__right-block">
+          <label class="select__label">Марка <span class="select__sublabel">авто:</span>
+            <select class="select">
+              <option value="option0">&nbsp;</option>
+              <option value="option1">option1</option>
+              <option value="option2">option2</option>
+            </select>
+          </label>
+          <label class="select__label">Модель <span class="select__sublabel">автомобиля:</span>
+            <select class="select">
+              <option value="option0">&nbsp;</option>
+              <option value="option1">option1</option>
+              <option value="option2">option2</option>
+            </select>
+          </label>
+          <label class="select__label">Год выпуска <span class="select__sublabel">автомобиля:</span>
+            <select class="select-year">
+              <option value="option0">&nbsp;</option>
+              <option value="option1">option1</option>
+              <option value="option2">option2</option>
+            </select>
+          </label>
+          <label class="select__label">Комплектация:
+            <select class="select">
+              <option value="option0">&nbsp;</option>
+              <option value="option1">option1</option>
+              <option value="option2">option2</option>
+            </select>
+          </label>
+        </div>
+        <input type="submit" value="поиск..." class="select__submit">
       </form>
       <form action="#" class="search search-tyre">
         <label class="search__label">поиск шин</label>
-        <label class="select__label"><select name="" class="select">
-          <option value="option1">&nbsp;</option>
-          <option value="option1">option1</option>
-          <option value="option2">option2</option>
-          <option value="option3">option3</option>
-          <option value="option4">option4</option>
-        </select></label>
-        <label class="select__label"><select name="" class="select">
-          <option value="option1">&nbsp;</option>
-          <option value="option1">option1</option>
-          <option value="option2">option2</option>
-          <option value="option3">option3</option>
-          <option value="option4">option4</option>
-        </select></label>
-        <label class="select__label"><select name="" class="select">
-          <option value="option1">&nbsp;</option>
-          <option value="option1">option1</option>
-          <option value="option2">option2</option>
-          <option value="option3">option3</option>
-          <option value="option4">option4</option>
-        </select></label>
-        <label class="select__label"><select name="" class="select">
-          <option value="option1">&nbsp;</option>
-          <option value="option1">option1</option>
-          <option value="option2">option2</option>
-          <option value="option3">option3</option>
-          <option value="option4">option4</option>
-        </select></label>
-        <input type="submit" value="поиск..." class="select__submit"></input>
+        <label class="select__label select__label-size1">Размер:
+          <select class="select-size1">
+            <option value="option0">&nbsp;</option>
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+          </select>
+        </label>
+        <label class="select__label select__label-size2">/
+          <select class="select-size2">
+            <option value="option0">&nbsp;</option>
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+          </select>
+        </label>
+        <label class="select__label select__label-r">
+          <select class="select-r">
+            <option value="option0">&nbsp;</option>
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+          </select>
+        </label>
+        <label class="select__label select__label-season">Сезон:</label>
+        <label class="select__checkbox-label">
+          <input type="checkbox" class="select__checkbox">лето
+        </label>
+        <label class="select__checkbox-label">
+          <input type="checkbox" class="select__checkbox">зима
+        </label>
+        <label class="select__checkbox-label">
+          <input type="checkbox" class="select__checkbox">всесез
+        </label>
+        
+        <input type="submit" value="поиск..." class="select__submit">
       </form>
       <form action="#" class="search search-disc">
         <label class="search__label">поиск дисков</label>
-        <label class="select__label"><select name="" class="select">
-          <option value="option1">&nbsp;</option>
-          <option value="option1">option1</option>
-          <option value="option2">option2</option>
-          <option value="option3">option3</option>
-          <option value="option4">option4</option>
-        </select></label>
-        <label class="select__label"><select name="" class="select">
-          <option value="option1">&nbsp;</option>
-          <option value="option1">option1</option>
-          <option value="option2">option2</option>
-          <option value="option3">option3</option>
-          <option value="option4">option4</option>
-        </select></label>
-        <label class="select__label"><select name="" class="select">
-          <option value="option1">&nbsp;</option>
-          <option value="option1">option1</option>
-          <option value="option2">option2</option>
-          <option value="option3">option3</option>
-          <option value="option4">option4</option>
-        </select></label>
-        <label class="select__label"><select name="" class="select">
-          <option value="option1">&nbsp;</option>
-          <option value="option1">option1</option>
-          <option value="option2">option2</option>
-          <option value="option3">option3</option>
-          <option value="option4">option4</option>
-        </select></label>
-        <input type="submit" value="поиск..." class="select__submit"></input>
+        <label class="select__label">Диаметр <span class="select__sublabel">диска:</span>
+          <select class="select">
+            <option value="option0">14</option>
+            <option value="option1">15</option>
+            <option value="option2">16</option>
+          </select>
+        </label>
+        <label class="select__label">Количество <span class="select__sublabel">крепёжных отверстий:</span>
+          <select class="select">
+            <option value="option0">3</option>
+            <option value="option1">4</option>
+            <option value="option2">5</option>
+          </select>
+        </label>
+        <label class="select__label">Диаметр <span class="select__sublabel">расположения крепёжных отверстий:</span>
+          <select class="select">
+            <option value="option0">12</option>
+            <option value="option1">13</option>
+            <option value="option2">14</option>
+          </select>
+        </label>
+        <div class="search-disc__right-block">
+          <label class="select__label">ДЦО <span class="select__sublabel">(диаметр центрального отверстия):</span>
+            <select class="select select-dco-et">
+              <option value="option0">12</option>
+              <option value="option1">13</option>
+              <option value="option2">14</option>
+            </select>
+          </label>
+          <label class="select__label">ЕТ <span class="select__sublabel">(вылет диска):</span>
+            <select class="select select-dco-et">
+              <option value="option0">12</option>
+              <option value="option1">13</option>
+              <option value="option2">14</option>
+            </select>
+          </label>
+        </div>
+        <input type="submit" value="поиск..." class="select__submit">
       </form>
+      
+      <!-- КАТАЛОГ -->
+      <div class="catalog">
+        <header class="catalog__header">
+          <img src="" alt="" class="catalog__header-ico"><span class="catalog__header-text">КАТАЛОГ ПРОДУКЦИИ:</span>
+        </header>
+        <section class="catalog-section">
+          <h2 class="catalog-section__header">ШИНЫ</h2>
+          <ul>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 1</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 2</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 3</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 4</a></li>
+          </ul>
+        </section>
+        <section class="catalog-section">
+          <h2 class="catalog-section__header">ДИСКИ</h2>
+          <ul>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 1</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 2</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 3</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 4</a></li>
+          </ul>
+        </section>
+        <section class="catalog-section">
+          <h2 class="catalog-section__header">БОЛТЫ</h2>
+          <ul>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 1</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 2</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 3</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 4</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- БРЕНДЫ -->
+      <div class="brandfilter">
+        <header class="brandfilter__header">
+          <img src="" alt="" class="brandfilter__header-ico"><span class="brandfilter__header-text">БРЕНДЫ:</span>
+        </header>
+        <form action="#" id="tires-brands" class="brandfilter__form">
+          <fieldset class="brandfilter-section">
+            <label class="brandfilter-section__header">ШИНЫ</label>
+            <input type="checkbox" class="brandfilter__checkbox">Бренд 1
+            <input type="checkbox" class="brandfilter__checkbox">Бренд 2
+            <input type="checkbox" class="brandfilter__checkbox">Бренд 3
+          </fieldset>
+          <fieldset class="brandfilter-section">
+            <label class="brandfilter-section__header">ДИСКИ</label>
+            <input type="checkbox" class="brandfilter__checkbox">Бренд 1
+            <input type="checkbox" class="brandfilter__checkbox">Бренд 2
+            <input type="checkbox" class="brandfilter__checkbox">Бренд 3
+          </fieldset>
+          <input type="submit" value="ВЫБРАТЬ" class="brandfilter__submit">
+        </form>
+      </div>
+
+      <div class="goods">
+        <div class="goods-row">
+          <a href="#" class="good">
+            <span class="good__brand-name">Goodyear</span>
+            <span class="good__good-name">Ultra Grip Extreme</span>
+            <span class="good__image-box good__image-1"></span>
+            <span class="good__good-priceval">90.00</span>
+            <span class="good__good-currency">грн.</span>
+          </a>
+          <a href="#" class="good">
+            <span class="good__brand-name">Nokian</span>
+            <span class="good__good-name">Hakkapeliitta R</span>
+            <span class="good__image-box good__image-2"></span>
+            <span class="good__good-priceval">115.00</span>
+            <span class="good__good-currency">грн.</span>
+          </a>
+          <a href="#" class="good">
+            <span class="good__brand-name">Hankook</span>
+            <span class="good__good-name">K 708 155/65 R14</span>
+            <span class="good__image-box good__image-3"></span>
+            <span class="good__good-priceval">393.00</span>
+            <span class="good__good-currency">грн.</span>
+          </a>
+        </div>
+      </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="brandlogo">
+        <a href="#" class="brandlogo__brand01"></a>
+        <a href="#" class="brandlogo__brand02"></a>
+        <a href="#" class="brandlogo__brand03"></a>
+        <a href="#" class="brandlogo__brand04"></a>
+        <a href="#" class="brandlogo__brand05"></a>
+        <a href="#" class="brandlogo__brand06"></a>
+        <a href="#" class="brandlogo__brand07"></a>
+        <a href="#" class="brandlogo__brand08"></a>
+      </div>
+      <div class="footer-nav">
+        <a href="#" class="footer-nav__link">О компании</a>
+        <a href="#" class="footer-nav__link">Доставка</a>
+        <a href="#" class="footer-nav__link">Статьи</a>
+        <a href="#" class="footer-nav__link">Контакты</a>
+      </div>
+      <a href="#" class="footer__site-autor">Создание сайта &copy; Global Vision</a>
+    </footer>
   </div>
 </body>
 </html>

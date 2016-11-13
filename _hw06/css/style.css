@@ -10,9 +10,8 @@
 (!) цвета элементов, границы
 */
 
-@import "reset.css";
 @import "fonts.css";
-  /*"Lucida Sans"*/
+@import "reset.css";
 
 .clr{/*После сфлоаченных блоков добавляем <div class="clr"> без содержимого и он прекратит сфлоачивание. */
   clear:both;
@@ -22,32 +21,97 @@
   display: table;
   clear: both;
 }
-
 html {
   background-color: #FFF;
 }
+body {
+  height: 2500px;
+}
 .wrapper {
   width: 912px;
+  height: 2000px;
+  background-color: lightyellow;
   margin: auto;
 }
 .header-top {
-  display: inline-block;
   height: 26px;
   width: 100%;
-  border: 1px solid;
+  margin: 9px 0 0 1px;
 }
 .contacts {
-  
+  display: block;
+  float: left;
+  width: 304px;
+  margin: 12px 0 0 0;
+  color: #5e696d;
+  font: normal 18px Arial,sans-serif;
+  line-height: 25px;
 }
 .contacts__ico-phone {
-  margin: 0;
+  margin: 0 0 0 7px;
+}
+.contacts__phone {
+  margin: 0 3px 0 -2px;
+  vertical-align: 4px;
+  letter-spacing: 0.45px;
 }
 .login-form {
-  display: inline-block;
+  display: block;
+  float: left;
   width: 495px;
   height: 26px;
   background-color: #b1bcc0;
   background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
   border-radius: 4px;
-  box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, 0.75);
+  box-shadow: 2px 3px 3px rgba(150, 150, 150, 0.75), 0px 0px 2px rgba(150, 150, 150, 0.75);
+  margin: 9px 0 0 10px;
+}
+.login-form__user-ico {
+  display: block;
+  float: left;
+  width: 14px;
+  height: 18px;
+  background: transparent url(../img/ico-login.png) 0 0 no-repeat;
+  margin: 4px -2px 0 7px;
+}
+.login-form__input {
+  display: block;
+  float: left;
+  width: 112px;
+  height: 14px;
+  background-color: white;
+  border: 1px solid #9ba1a3;
+  margin: 3px 2px 0 5px;
+  vertical-align: 6px;
+  color: #97a2a6;
+  font: normal normal 12px "Lucida Sans", Arial, sans-serif;
+  /*font-family: "Lucida Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;*/
+}
+.login-form__input_fix_1 {
+  text-indent: 4px;
+}
+.login-form__input_fix_2 {
+  text-indent: 5px;
+  letter-spacing: -0.4px;
+}
+.login-form__submit-registrate {
+  display: block;
+  float: left;
+  width: 32px;
+  height: 100%;
+  color: #000;
+  font: 13px "Lucida Sans";
+  /* font-family: "Lucida Sans", Arial; */
+  /* font-size: 11px; */
+  /* font-weight: 400; */
+  /* line-height: 25px; */
+  margin: 0px 0 0 5px;
+  background-color: transparent;
+  border: 0;
+}
+.login-form__pwd-restore {
+  margin: 0;
 }
