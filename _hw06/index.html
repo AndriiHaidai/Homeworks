@@ -9,40 +9,40 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="header-top"><!-- * -->
+      <div class="header-top">
         <div class="contacts">
           <img src="img/ico-phone.png" alt="ico-phone.jpg" class="contacts__ico-phone">
           <span class="contacts__phone">(044)123-45-67</span>
           <span class="contacts__phone">(044)567-89-10</span>
         </div>
-        <form action="#" method="post" class="login-form clearfix">
-          <span class="login-form__user-ico"></span>
-          <input type="text" name="login" id="login" class="login-form__input login-form__input_fix_1" placeholder="логин">
-          <input type="password" name="password" id="password" class="login-form__input login-form__input_fix_2" placeholder="пароль">
-          <input type="submit" value="вход | регистрация" class="login-form__login-reg-restorepwd">
-          <a href="#" class="login-form__login-reg-restorepwd login-form__restorepwd">забыли пароль?</a>
+        <form action="#" method="post" class="auth-form clearfix">
+          <span class="auth-form__user-ico"></span>
+          <input type="text" name="login" id="login" class="auth-form__input auth-form__input_fix_1" placeholder="логин">
+          <input type="password" name="password" id="password" class="auth-form__input auth-form__input_fix_2" placeholder="пароль">
+          <input type="submit" value="вход | регистрация" class="auth-form__login-reg-restorepwd">
+          <a href="#" class="auth-form__login-reg-restorepwd auth-form__restorepwd">забыли пароль?</a>
         </form>
-        <div class="site-map"><!-- * -->
+        <div class="site-map">
           <a href="#" class="site-map__link"><img src="img/ico-home.png" alt="ico-home.png" class="site-map__ico"></a>
           <a href="#" class="site-map__link"><img src="img/ico-site-map.png" alt="ico-site-map.png" class="site-map__ico site-map__ico2"></a>
-          <a href="#" class="site-map__link"><img src="img/ico-mailto.png" alt="ico-mailto.png" class="site-map__ico site-map__ico3"></a>
+          <a href="#" class="site-map__link"><img src="img/ico-mailto.png" alt="ico-mailto.png" class="site-map__ico site-map__ico3 clearfix"></a>
         </div>
       </div>
-      <div class="header-logo"></div><!-- * -->
-      <nav class="header-nav">
-        <ul class="header-nav__menu">
-          <li><a href="#" class="header-nav__link">О КОМПАНИ</a></li>
-          <li><a href="#" class="header-nav__link">ОПЛАТА</a></li>
-          <li><a href="#" class="header-nav__link">ДОСТАВКА</a></li>
-          <li><a href="#" class="header-nav__link">СТАТЬИ</a></li>
-          <li><a href="#" class="header-nav__link">КОНТАКТЫ</a></li>
+      <div class="header-logo"><img src="img/header-logo.jpg" alt="header-logo.jpg"></div>
+      <nav class="header-menu"><!-- * -->
+        <ul class="header-menu__nav">
+          <li class="header-menu__item"><a href="#" class="header-menu__link">О КОМПАНИ</a></li>
+          <li class="header-menu__item header-menu__item_elem2"><a href="#" class="header-menu__link">ОПЛАТА</a></li>
+          <li class="header-menu__item header-menu__item_elem3"><a href="#" class="header-menu__link">ДОСТАВКА</a></li>
+          <li class="header-menu__item header-menu__item_elem4"><a href="#" class="header-menu__link">СТАТЬИ</a></li>
+          <li class="header-menu__item header-menu__item_elem5"><a href="#" class="header-menu__link">КОНТАКТЫ</a></li>
         </ul>
-        <a href="#" class="cart">
-          <i class="cart__ico-cart"></i>
-          товаров:
-          <span class="cart__goods"></span>
-          на сумму:
-          <span class="cart__total"></span>
+        <a href="#" class="cart"><!-- * -->
+          <img src="img/ico-cart.png" alt="ico-cart.png" class="cart__elem">
+          <span class="cart__elem cart__label">товаров:</span>
+          <span class="cart__elem cart__val">0</span>
+          <span class="cart__elem cart__label cart__label_elem2">на сумму:</span>
+          <span class="cart__elem cart__val cart__val_elem2">0,00 грн.</span>
         </a>
       </nav>
     </header>

@@ -39,7 +39,7 @@ body {
   margin: auto;
 }
 .header-top {
-  height: 26px;
+  height: 40px;
   width: 100%;
   margin: 9px 0 0 1px;
 }
@@ -60,7 +60,7 @@ body {
   vertical-align: 4px;
   letter-spacing: 0.45px;
 }
-.login-form {
+.auth-form {
   display: block;
   float: left;
   width: 495px;
@@ -71,7 +71,7 @@ body {
   box-shadow: 2px 3px 3px rgba(150, 150, 150, 0.75), 0px 0px 2px rgba(150, 150, 150, 0.75);
   margin: 9px 0 0 10px;
 }
-.login-form__user-ico {
+.auth-form__user-ico {
   display: block;
   float: left;
   width: 14px;
@@ -79,7 +79,7 @@ body {
   background: transparent url(../img/ico-login.png) 0 0 no-repeat;
   margin: 4px -2px 0 7px;
 }
-.login-form__input {
+.auth-form__input {
   display: block;
   float: left;
   width: 112px;
@@ -91,14 +91,14 @@ body {
   color: #97a2a6;
   font: normal normal 11px "Lucida Sans", Arial, sans-serif;
 }
-.login-form__input_fix_1 {
+.auth-form__input_fix_1 {
   text-indent: 4px;
 }
-.login-form__input_fix_2 {
+.auth-form__input_fix_2 {
   text-indent: 5px;
   letter-spacing: -0.4px;
 }
-.login-form__login-reg-restorepwd {
+.auth-form__login-reg-restorepwd {
   position: relative;
   display: block;
   float: left;
@@ -111,16 +111,17 @@ body {
   font: normal 11px "Lucida Sans";
   line-height: 11px;
   letter-spacing: -0.3px;
+  cursor: pointer;
 }
-.login-form__restorepwd {
+.auth-form__restorepwd {
   width: 95px;
   letter-spacing: 0.5px;
   margin: 7px 0 0 21px;
 }
-.login-form__login-reg-restorepwd:hover {
+.auth-form__login-reg-restorepwd:hover {
   color: #bfbfbf;
 }
-.login-form__login-reg-restorepwd:hover::after {
+.auth-form__login-reg-restorepwd:hover::after {
   content: '';
   width: 100%;
   position: absolute;
@@ -172,4 +173,86 @@ body {
 .site-map__ico3 {
   top: 4px;
   left: 51px;
+}
+.header-logo {
+  width: 100%;
+  height: 240px;
+  margin: 5px 0 0 1px;
+}
+.header-menu {
+  width: 910px;
+  height: 32px;
+  margin: 3px 0 0 0;
+  background-color: white;
+  background-image: linear-gradient(to top, black 0%, #2d3236 85%, #576068 100%);
+  border: 1px solid #0d1642;
+  border-radius: 5px;
+  box-shadow: 1.5px 2.6px 5px rgba(0, 0, 0, 0.75);
+  list-style-type: none;
+}
+.header-menu__nav {
+  float: left;
+  margin: 4px 0 0 85px;
+}
+.header-menu__item {
+  display: block;
+  float: left;
+  height: 26px;
+  letter-spacing: -0.3px;
+}
+.header-menu__item_elem2 {
+  margin: 0 0 0 -7px;
+  letter-spacing: -0.2px;
+}
+.header-menu__item_elem3 {
+  margin: 0 0 0 -12px;
+}
+.header-menu__item_elem4 {
+  margin: 0 0 0 -12px;
+  letter-spacing: -0.2px;
+}
+.header-menu__item_elem5 {
+  margin: 0 0 0 -16px;
+}
+.header-menu__link {
+  text-decoration: none;
+  font: normal 14px "Lucida Sans",Arial,sans-serif;
+  line-height: 25px;
+  color: #b1bcc0;
+  padding: 0 20px 0 22px;
+}
+.header-menu__link:hover {
+  background-color: #f60303;
+  background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+  color: #FFF;
+  -webkit-border-radius: 13px;
+          border-radius: 13px;
+}
+.cart {
+  display: block;
+  float: left;
+  margin: 7px 0 0 52px;
+}
+.cart__elem {
+  display: block;
+  float: left;
+}
+.cart__label {
+  color: #929b9f;
+  font: normal 11px Arial,sans-serif;
+  margin: 2px 0 0 7px;
+  letter-spacing: 0.4px;
+}
+.cart__label_elem2 {
+  margin: 2px 0 0 14px;
+  letter-spacing: 0.2px;
+}
+.cart__val {
+  color: #0d5a8f;
+  font: normal 12px Arial,sans-serif;
+  margin: 2px 0 0 2px;
+}
+.cart__val_elem2 {
+  margin: 2px 0 0 10px;
+  letter-spacing: 0.5px;
 }
