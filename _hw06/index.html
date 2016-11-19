@@ -1,301 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/fonts.css">
-</head>
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header-top">
-        <div class="contacts">
-          <img src="img/ico-phone.png" alt="ico-phone.jpg" class="contacts__ico-phone">
-          <span class="contacts__phone">(044)123-45-67</span>
-          <span class="contacts__phone">(044)567-89-10</span>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="contacts">
+            <img src="img/ico-phone.png" alt="ico-phone.jpg" class="contacts__ico-phone">
+            <span class="contacts__phone">(044)123-45-67</span>
+            <span class="contacts__phone">(044)567-89-10</span>
+          </div>
+          <form action="#" method="post" class="auth-form clearfix">
+            <span class="auth-form__user-ico"></span>
+            <input type="text" name="login" id="login" class="auth-form__input auth-form__input_fix_1" placeholder="логин">
+            <input type="password" name="password" id="password" class="auth-form__input auth-form__input_fix_2" placeholder="пароль">
+            <input type="submit" value="вход | регистрация" class="auth-form__login-reg-restorepwd">
+            <a href="#" class="auth-form__login-reg-restorepwd auth-form__restorepwd">забыли пароль?</a>
+          </form>
+          <div class="site-map">
+            <a href="#" class="site-map__link"><img src="img/ico-home.png" alt="ico-home.png" class="site-map__ico"></a>
+            <a href="#" class="site-map__link"><img src="img/ico-site-map.png" alt="ico-site-map.png" class="site-map__ico site-map__ico2"></a>
+            <a href="#" class="site-map__link"><img src="img/ico-mailto.png" alt="ico-mailto.png" class="site-map__ico site-map__ico3 clearfix"></a>
+          </div>
         </div>
-        <form action="#" method="post" class="auth-form clearfix">
-          <span class="auth-form__user-ico"></span>
-          <input type="text" name="login" id="login" class="auth-form__input auth-form__input_fix_1" placeholder="логин">
-          <input type="password" name="password" id="password" class="auth-form__input auth-form__input_fix_2" placeholder="пароль">
-          <input type="submit" value="вход | регистрация" class="auth-form__login-reg-restorepwd">
-          <a href="#" class="auth-form__login-reg-restorepwd auth-form__restorepwd">забыли пароль?</a>
-        </form>
-        <div class="site-map">
-          <a href="#" class="site-map__link"><img src="img/ico-home.png" alt="ico-home.png" class="site-map__ico"></a>
-          <a href="#" class="site-map__link"><img src="img/ico-site-map.png" alt="ico-site-map.png" class="site-map__ico site-map__ico2"></a>
-          <a href="#" class="site-map__link"><img src="img/ico-mailto.png" alt="ico-mailto.png" class="site-map__ico site-map__ico3 clearfix"></a>
-        </div>
+        <div class="header-logo"><img src="img/header-logo.jpg" alt="header-logo.jpg"></div>
+        <nav class="header-menu">
+          <ul class="header-menu__nav">
+            <li class="header-menu__item"><a href="#" class="header-menu__link">О КОМПАНИ</a></li>
+            <li class="header-menu__item header-menu__item_elem2"><a href="#" class="header-menu__link">ОПЛАТА</a></li>
+            <li class="header-menu__item header-menu__item_elem3"><a href="#" class="header-menu__link">ДОСТАВКА</a></li>
+            <li class="header-menu__item header-menu__item_elem4"><a href="#" class="header-menu__link">СТАТЬИ</a></li>
+            <li class="header-menu__item header-menu__item_elem5"><a href="#" class="header-menu__link">КОНТАКТЫ</a></li>
+          </ul>
+          <a href="#" class="cart">
+            <img src="img/ico-cart.png" alt="ico-cart.png" class="cart__elem">
+            <span class="cart__elem cart__label">товаров:</span>
+            <span class="cart__elem cart__val">0</span>
+            <span class="cart__elem cart__label cart__label_elem2">на сумму:</span>
+            <span class="cart__elem cart__val cart__val_elem2">0,00 грн.</span>
+          </a>
+        </nav>
+      </header>
+      <main class="main clearfix">
+      <div class="searchline">
       </div>
-      <div class="header-logo"><img src="img/header-logo.jpg" alt="header-logo.jpg"></div>
-      <nav class="header-menu"><!-- * -->
-        <ul class="header-menu__nav">
-          <li class="header-menu__item"><a href="#" class="header-menu__link">О КОМПАНИ</a></li>
-          <li class="header-menu__item header-menu__item_elem2"><a href="#" class="header-menu__link">ОПЛАТА</a></li>
-          <li class="header-menu__item header-menu__item_elem3"><a href="#" class="header-menu__link">ДОСТАВКА</a></li>
-          <li class="header-menu__item header-menu__item_elem4"><a href="#" class="header-menu__link">СТАТЬИ</a></li>
-          <li class="header-menu__item header-menu__item_elem5"><a href="#" class="header-menu__link">КОНТАКТЫ</a></li>
-        </ul>
-        <a href="#" class="cart"><!-- * -->
-          <img src="img/ico-cart.png" alt="ico-cart.png" class="cart__elem">
-          <span class="cart__elem cart__label">товаров:</span>
-          <span class="cart__elem cart__val">0</span>
-          <span class="cart__elem cart__label cart__label_elem2">на сумму:</span>
-          <span class="cart__elem cart__val cart__val_elem2">0,00 грн.</span>
-        </a>
-      </nav>
-    </header>
-
-    <main>
-      <form action="#" class="search search-by-car">
-        <label class="search__label">Поиск по автомобилю</label>
-        <!-- ДИСКИ -->
-        <label class="search__sublabel search__sublabel-discs">Диски:</label>
-        <div class="search-by-car__left-block">
-          <label class="select__label">Марка <span class="select__sublabel">авто:</span>
-            <select class="select">
-              <option value="option0">&nbsp;</option>
-              <option value="option1">option1</option>
-              <option value="option2">option2</option>
-            </select>
-          </label>
-          <label class="select__label">Модель <span class="select__sublabel">автомобиля:</span>
-            <select class="select">
-              <option value="option0">&nbsp;</option>
-              <option value="option1">option1</option>
-              <option value="option2">option2</option>
-            </select>
-          </label>
-          <label class="select__label">Год выпуска <span class="select__sublabel">автомобиля:</span>
-            <select class="select-year">
-              <option value="option0">&nbsp;</option>
-              <option value="option1">option1</option>
-              <option value="option2">option2</option>
-            </select>
-          </label>
-          <label class="select__label">Комплектация:
-            <select class="select">
-              <option value="option0">&nbsp;</option>
-              <option value="option1">option1</option>
-              <option value="option2">option2</option>
-            </select>
-          </label>
-        </div>
-        <!-- ШИНЫ -->
-        <label class="search__sublabel search__sublabel-tires">Шины:</label>
-        <div class="search-by-car__right-block">
-          <label class="select__label">Марка <span class="select__sublabel">авто:</span>
-            <select class="select">
-              <option value="option0">&nbsp;</option>
-              <option value="option1">option1</option>
-              <option value="option2">option2</option>
-            </select>
-          </label>
-          <label class="select__label">Модель <span class="select__sublabel">автомобиля:</span>
-            <select class="select">
-              <option value="option0">&nbsp;</option>
-              <option value="option1">option1</option>
-              <option value="option2">option2</option>
-            </select>
-          </label>
-          <label class="select__label">Год выпуска <span class="select__sublabel">автомобиля:</span>
-            <select class="select-year">
-              <option value="option0">&nbsp;</option>
-              <option value="option1">option1</option>
-              <option value="option2">option2</option>
-            </select>
-          </label>
-          <label class="select__label">Комплектация:
-            <select class="select">
-              <option value="option0">&nbsp;</option>
-              <option value="option1">option1</option>
-              <option value="option2">option2</option>
-            </select>
-          </label>
-        </div>
-        <input type="submit" value="поиск..." class="select__submit">
-      </form>
-      <form action="#" class="search search-tyre">
-        <label class="search__label">поиск шин</label>
-        <label class="select__label select__label-size1">Размер:
-          <select class="select-size1">
-            <option value="option0">&nbsp;</option>
-            <option value="option1">option1</option>
-            <option value="option2">option2</option>
-          </select>
-        </label>
-        <label class="select__label select__label-size2">/
-          <select class="select-size2">
-            <option value="option0">&nbsp;</option>
-            <option value="option1">option1</option>
-            <option value="option2">option2</option>
-          </select>
-        </label>
-        <label class="select__label select__label-r">
-          <select class="select-r">
-            <option value="option0">&nbsp;</option>
-            <option value="option1">option1</option>
-            <option value="option2">option2</option>
-          </select>
-        </label>
-        <label class="select__label select__label-season">Сезон:</label>
-        <label class="select__checkbox-label">
-          <input type="checkbox" class="select__checkbox">лето
-        </label>
-        <label class="select__checkbox-label">
-          <input type="checkbox" class="select__checkbox">зима
-        </label>
-        <label class="select__checkbox-label">
-          <input type="checkbox" class="select__checkbox">всесез
-        </label>
-        
-        <input type="submit" value="поиск..." class="select__submit">
-      </form>
-      <form action="#" class="search search-disc">
-        <label class="search__label">поиск дисков</label>
-        <label class="select__label">Диаметр <span class="select__sublabel">диска:</span>
-          <select class="select">
-            <option value="option0">14</option>
-            <option value="option1">15</option>
-            <option value="option2">16</option>
-          </select>
-        </label>
-        <label class="select__label">Количество <span class="select__sublabel">крепёжных отверстий:</span>
-          <select class="select">
-            <option value="option0">3</option>
-            <option value="option1">4</option>
-            <option value="option2">5</option>
-          </select>
-        </label>
-        <label class="select__label">Диаметр <span class="select__sublabel">расположения крепёжных отверстий:</span>
-          <select class="select">
-            <option value="option0">12</option>
-            <option value="option1">13</option>
-            <option value="option2">14</option>
-          </select>
-        </label>
-        <div class="search-disc__right-block">
-          <label class="select__label">ДЦО <span class="select__sublabel">(диаметр центрального отверстия):</span>
-            <select class="select select-dco-et">
-              <option value="option0">12</option>
-              <option value="option1">13</option>
-              <option value="option2">14</option>
-            </select>
-          </label>
-          <label class="select__label">ЕТ <span class="select__sublabel">(вылет диска):</span>
-            <select class="select select-dco-et">
-              <option value="option0">12</option>
-              <option value="option1">13</option>
-              <option value="option2">14</option>
-            </select>
-          </label>
-        </div>
-        <input type="submit" value="поиск..." class="select__submit">
-      </form>
       
       <!-- КАТАЛОГ -->
-      <div class="catalog">
+      <div class="catalog column-of-same-height">
         <header class="catalog__header">
-          <img src="" alt="" class="catalog__header-ico"><span class="catalog__header-text">КАТАЛОГ ПРОДУКЦИИ:</span>
+          <img src="img/ico-catalog.png" alt="ico-catalog.png" class="catalog__header-ico">
+          <span class="catalog__header-text">КАТАЛОГ ПРОДУКЦИИ:</span>
         </header>
-        <section class="catalog-section">
-          <h2 class="catalog-section__header">ШИНЫ</h2>
-          <ul>
-            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 1</a></li>
-            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 2</a></li>
-            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 3</a></li>
-            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 4</a></li>
+        <section class="catalog__section">
+          <header class="catalog__section-header">
+            <img src="img/ico-tire.png" alt="ico-tire.png" class="catalog__section-header-ico dbfl">
+            <h2 class="catalog__section-header-text">ШИНЫ</h2>
+          </header>
+          <ul class="catalog__list">
+            <li class="catalog__item"><a href="#" class="catalog__link">Наименование 1</a></li>
+            <li class="catalog__item catalog__item_fix-h24"><a href="#" class="catalog__link">Наименование 2</a></li>
+            <li class="catalog__item catalog__item_fix-h26 catalog__item_fix-bullet_t-1"><a href="#" class="catalog__link">Наименование 3</a></li>
+            <li class="catalog__item catalog__item_fix-h24 catalog__item_fix-bullet_t1"><a href="#" class="catalog__link">Наименование 4</a></li>
           </ul>
         </section>
-        <section class="catalog-section">
-          <h2 class="catalog-section__header">ДИСКИ</h2>
-          <ul>
-            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 1</a></li>
-            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 2</a></li>
-            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 3</a></li>
-            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 4</a></li>
+        <section class="catalog__section catalog__section_fix1">
+          <header class="catalog__section-header catalog__section-header_fix1">
+            <img src="img/ico-disc.png" alt="ico-disc.png" class="catalog__section-header-ico dbfl catalog__section-header-ico_fix2">
+            <h2 class="catalog__section-header-text catalog__section-header-text_fix2">ДИСКИ</h2>
+          </header>
+          <ul class="catalog__list">
+            <li class="catalog__item catalog__item_fix-h26"><a href="#" class="catalog__link">Наименование 1</a></li>
+            <li class="catalog__item catalog__item_fix-h25 catalog__item_fix-bullet_-3_1"><a href="#" class="catalog__link">Наименование 2</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link">Наименование 3</a></li>
+            <li class="catalog__item catalog__item_fix-h27"><a href="#" class="catalog__link">Наименование 4</a></li>
           </ul>
         </section>
-        <section class="catalog-section">
-          <h2 class="catalog-section__header">БОЛТЫ</h2>
-          <ul>
-            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 1</a></li>
-            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 2</a></li>
-            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 3</a></li>
-            <li class="catalog__item"><a href="#" class="catalog__link"><img src="" alt="" class="catalog__item-marker">Наименование 4</a></li>
+        <section class="catalog__section">
+          <header class="catalog__section-header catalog__section-header_fix2">
+            <img src="img/ico-bolt.png" alt="ico-bolt.png" class="catalog__section-header-ico dbfl catalog__section-header-ico_fix3">
+            <h2 class="catalog__section-header-text catalog__section-header-text_fix3">БОЛТЫ</h2>
+          </header>
+          <ul class="catalog__list">
+            <li class="catalog__item catalog__item_fix-h25"><a href="#" class="catalog__link">Наименование 1</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link">Наименование 2</a></li>
+            <li class="catalog__item catalog__item_fix-h25"><a href="#" class="catalog__link">Наименование 3</a></li>
+            <li class="catalog__item catalog__item_fix-h23"><a href="#" class="catalog__link">Наименование 4</a></li>
           </ul>
         </section>
       </div>
-
+      <div class="goods column-of-same-height">
+        <!--  - 1 -  -->
+        <a href="#" class="good">
+          <span class="good__brand-name good__brand-name1">Goodyear</span>
+          <span class="good__good-name good__good-name1">Ultra Grip Extreme</span>
+          <span class="good__image-box good__img-1"></span>
+          <span class="good__good-priceval good__good-priceval1">90.00<span class="good__good-currency good__good-currency1">грн.</span></span>
+        </a>
+        <a href="#" class="good">
+          <span class="good__brand-name good__brand-name2">Nokian</span>
+          <span class="good__good-name good__good-name2">Hakkapeliitta R</span>
+          <span class="good__image-box good__img-2"></span>
+          <span class="good__good-priceval good__good-priceval2">115.00<span class="good__good-currency good__good-currency2">грн.</span></span>
+        </a>
+        <a href="#" class="good">
+          <span class="good__brand-name good__brand-name3">Hankook</span>
+          <span class="good__good-name good__good-name3">K 708 155/65 R14</span>
+          <span class="good__image-box good__img-3"></span>
+          <span class="good__good-priceval good__good-priceval3">393.00<span class="good__good-currency good__good-currency3">грн.</span></span>
+        </a>
+        <!--  - 2 -  -->
+        <a href="#" class="good good4">
+          <span class="good__brand-name good__brand-name4">Goodyear</span>
+          <span class="good__good-name good__good-name4">Ultra Grip Extreme</span>
+          <span class="good__image-box good__img-4"></span>
+          <span class="good__good-priceval good__good-priceval4">90.00<span class="good__good-currency good__good-currency4">грн.</span></span>
+        </a>
+        <a href="#" class="good good5">
+          <span class="good__brand-name good__brand-name5">Nokian</span>
+          <span class="good__good-name good__good-name5">Hakkapeliitta R</span>
+          <span class="good__image-box good__img-5"></span>
+          <span class="good__good-priceval good__good-priceval5">115.00<span class="good__good-currency good__good-currency5">грн.</span></span>
+        </a>
+        <a href="#" class="good good6">
+          <span class="good__brand-name good__brand-name6">Hankook</span>
+          <span class="good__good-name good__good-name6">K 708 155/65 R14</span>
+          <span class="good__image-box good__img-6"></span>
+          <span class="good__good-priceval good__good-priceval6">393.00<span class="good__good-currency good__good-currency6">грн.</span></span>
+        </a>
+        <!--  - 3 -  -->
+        <a href="#" class="good good7">
+          <span class="good__brand-name good__brand-name7">Goodyear</span>
+          <span class="good__good-name good__good-name7">Ultra Grip Extreme</span>
+          <span class="good__image-box good__img-7"></span>
+          <span class="good__good-priceval good__good-priceval7">90.00<span class="good__good-currency good__good-currency7">грн.</span></span>
+        </a>
+        <a href="#" class="good good8">
+          <span class="good__brand-name good__brand-name8">Nokian</span>
+          <span class="good__good-name good__good-name8">Hakkapeliitta R</span>
+          <span class="good__image-box good__img-8"></span>
+          <span class="good__good-priceval good__good-priceval8">115.00<span class="good__good-currency good__good-currency8">грн.</span></span>
+        </a>
+        <a href="#" class="good good9">
+          <span class="good__brand-name good__brand-name9">Hankook</span>
+          <span class="good__good-name good__good-name9">K 708 155/65 R14</span>
+          <span class="good__image-box good__img-9"></span>
+          <span class="good__good-priceval good__good-priceval9">393.00<span class="good__good-currency good__good-currency9">грн.</span></span>
+        </a>
+      </div>
       <!-- БРЕНДЫ -->
-      <div class="brandfilter">
+      <div class="brandfilter column-of-same-height">
         <header class="brandfilter__header">
-          <img src="" alt="" class="brandfilter__header-ico"><span class="brandfilter__header-text">БРЕНДЫ:</span>
+          <img src="img/ico-brandfilter.png" alt="ico-brandfilter.png" class="brandfilter__header-ico"><span class="brandfilter__header-text">БРЕНДЫ:</span>
         </header>
         <form action="#" id="tires-brands" class="brandfilter__form">
-          <fieldset class="brandfilter-section">
-            <label class="brandfilter-section__header">ШИНЫ</label>
-            <input type="checkbox" class="brandfilter__checkbox">Бренд 1
-            <input type="checkbox" class="brandfilter__checkbox">Бренд 2
-            <input type="checkbox" class="brandfilter__checkbox">Бренд 3
+          <fieldset class="brandfilter__section">
+            <header class="brandfilter__section-header">
+              <img src="img/ico-tire.png" alt="ico-tire.png" class="brandfilter__section-header-ico dbfl">
+              <h2 class="brandfilter__section-header-text">ШИНЫ</h2>
+            </header>
+            <input type="checkbox" id="chbx1" class="brandfilter__checkbox">
+            <label class="brandfilter__checkbox-label" for="chbx1">Бренд 1</label>
+            <input type="checkbox" id="chbx2" class="brandfilter__checkbox brandfilter__checkbox2">
+            <label class="brandfilter__checkbox-label brandfilter__checkbox-label2" for="chbx2">Бренд 2</label>
+            <input type="checkbox" id="chbx3" class="brandfilter__checkbox brandfilter__checkbox3">
+            <label class="brandfilter__checkbox-label brandfilter__checkbox-label3" for="chbx3">Бренд 3</label>
           </fieldset>
-          <fieldset class="brandfilter-section">
-            <label class="brandfilter-section__header">ДИСКИ</label>
-            <input type="checkbox" class="brandfilter__checkbox">Бренд 1
-            <input type="checkbox" class="brandfilter__checkbox">Бренд 2
-            <input type="checkbox" class="brandfilter__checkbox">Бренд 3
+          <fieldset class="brandfilter__section brandfilter__section2">
+            <header class="brandfilter__section-header brandfilter__section-header2">
+              <img src="img/ico-tire2.png" alt="ico-tire2.png" class="brandfilter__section-header-ico brandfilter__section-header-ico2 dbfl">
+              <h2 class="brandfilter__section-header-text brandfilter__section-header-text2">ДИСКИ</h2>
+            </header>
+            <input type="checkbox" id="chbx4" class="brandfilter__checkbox brandfilter__checkbox4">
+            <label class="brandfilter__checkbox-label brandfilter__checkbox-label4" for="chbx4">Бренд 1</label>
+            <input type="checkbox" id="chbx5" class="brandfilter__checkbox brandfilter__checkbox5">
+            <label class="brandfilter__checkbox-label brandfilter__checkbox-label5" for="chbx5">Бренд 2</label>
+            <input type="checkbox" id="chbx6" class="brandfilter__checkbox brandfilter__checkbox6">
+            <label class="brandfilter__checkbox-label brandfilter__checkbox-label6" for="chbx6">Бренд 3</label>
           </fieldset>
           <input type="submit" value="ВЫБРАТЬ" class="brandfilter__submit">
         </form>
       </div>
-
-      <div class="goods">
-        <div class="goods-row">
-          <a href="#" class="good">
-            <span class="good__brand-name">Goodyear</span>
-            <span class="good__good-name">Ultra Grip Extreme</span>
-            <span class="good__image-box good__image-1"></span>
-            <span class="good__good-priceval">90.00</span>
-            <span class="good__good-currency">грн.</span>
-          </a>
-          <a href="#" class="good">
-            <span class="good__brand-name">Nokian</span>
-            <span class="good__good-name">Hakkapeliitta R</span>
-            <span class="good__image-box good__image-2"></span>
-            <span class="good__good-priceval">115.00</span>
-            <span class="good__good-currency">грн.</span>
-          </a>
-          <a href="#" class="good">
-            <span class="good__brand-name">Hankook</span>
-            <span class="good__good-name">K 708 155/65 R14</span>
-            <span class="good__image-box good__image-3"></span>
-            <span class="good__good-priceval">393.00</span>
-            <span class="good__good-currency">грн.</span>
-          </a>
+      </main>
+      <footer>
+        <div class="brandlogo">
+          <a href="#" class="brandlogo__brand01"><img src="img/brand01.png" alt="brand01.png"></a>
+          <a href="#" class="brandlogo__brand02"><img src="img/brand02.png" alt="brand02.png"></a>
+          <a href="#" class="brandlogo__brand03"><img src="img/brand03.png" alt="brand03.png"></a>
+          <a href="#" class="brandlogo__brand04"><img src="img/brand04.png" alt="brand04.png"></a>
+          <a href="#" class="brandlogo__brand05"><img src="img/brand05.png" alt="brand05.png"></a>
+          <a href="#" class="brandlogo__brand06"><img src="img/brand06.png" alt="brand06.png"></a>
+          <a href="#" class="brandlogo__brand07"><img src="img/brand07.png" alt="brand07.png"></a>
+          <a href="#" class="brandlogo__brand08"><img src="img/brand08.png" alt="brand08.png"></a>
         </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="brandlogo">
-        <a href="#" class="brandlogo__brand01"></a>
-        <a href="#" class="brandlogo__brand02"></a>
-        <a href="#" class="brandlogo__brand03"></a>
-        <a href="#" class="brandlogo__brand04"></a>
-        <a href="#" class="brandlogo__brand05"></a>
-        <a href="#" class="brandlogo__brand06"></a>
-        <a href="#" class="brandlogo__brand07"></a>
-        <a href="#" class="brandlogo__brand08"></a>
-      </div>
-      <div class="footer-nav">
-        <a href="#" class="footer-nav__link">О компании</a>
-        <a href="#" class="footer-nav__link">Доставка</a>
-        <a href="#" class="footer-nav__link">Статьи</a>
-        <a href="#" class="footer-nav__link">Контакты</a>
-      </div>
-      <a href="#" class="footer__site-autor">Создание сайта &copy; Global Vision</a>
-    </footer>
-  </div>
-</body>
+        <div class="footer">
+          <a href="#" class="footer__link footer__link1">О компании</a>
+          <div></div>
+          <a href="#" class="footer__link footer__link2">Доставка</a>
+          <div></div>
+          <a href="#" class="footer__link footer__link3">Статьи</a>
+          <div></div>
+          <a href="#" class="footer__link footer__link4 clearfix">Контакты</a>
+          <a href="#" class="footer__site-autor-link">Создание сайта &copy; Global Vision</a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
