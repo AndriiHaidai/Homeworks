@@ -8,3 +8,9 @@ https://github.com/progit/progit/blob/master/ru/02-git-basics/01-chapter2.markdo
 not_repo/
 /*.png
 _task/
+.sass-cache/
+node_modules/
+src/
+gulpfile.js
+lint.yml
+package.json
