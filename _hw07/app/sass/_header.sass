@@ -1,0 +1,79 @@
+@import variables
+
+.header
+
+.navbar
+  display: flex
+  flex-wrap: nowrap
+  justify-content: space-between
+.header__navbar
+  margin-bottom: 157px
+  width: 100%
+
+.header__logo
+  margin-top: 51px
+  margin-left: -2px
+.logo
+  display: flex
+  &:hover
+    opacity: 0.8
+  &__text
+    display: block
+    margin-top: 16px
+    font: normal 48px/48px $LeagueGothic
+    color: #fff
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.6px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      width: 21px
+      height: 21px
+      top: -16px
+      left: 11px
+      background: url("../img/logo-i-point.png") 0 0 no-repeat
+  &__text_ending
+    background: linear-gradient(to top, #322539, #745083)
+    -webkit-background-clip: text
+    background-clip: text
+    color: transparent
+    text-shadow: none
+
+@media all and (max-width: 976px) // 960px - 1px + $scrollbar_width
+  .navbar
+    flex-direction: column
+  .header__navbar
+    margin-bottom: 71px
+
+  .logo__text::before
+    display: none
+  .logo__text_ending
+    margin-left: 4px
+    margin-top: 3px
+    vertical-align: -1px
+
+
+@media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
+  .navbar
+    align-items: center
+  .header__navbar
+    // margin: 0
+    margin-bottom: 0
+    margin-top: 51px
+
+  .header__logo
+    margin: 0
+    margin-left: -3px
+  .logo
+    display: flex
+    &:hover
+    &__text
+    &__text_ending
+      margin-left: 1px
+      position: relative
+      top: -1px
+
+// @media all and (max-width: 496px) // 479px + $scrollbar_width
+//   .header__navbar
+//     display: flex

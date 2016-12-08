@@ -1,0 +1,86 @@
+@import variables
+@import mixins
+
+.main-article__wrapper
+  display: flex
+  flex-direction: column
+  height: 436px
+  width: 47%
+  position: relative
+  &:before
+    position: absolute
+    content: url("../img/ico-article.png")
+    left: -2px
+    top: 117px
+    z-index: 1
+.main-article
+  position: relative
+  margin-top: 102px
+  margin-left: 23px
+  padding-left: 38px
+  padding-top: 30px
+  height: 239px
+  width: 85%
+  padding-right: 8px
+  box-shadow: 0 1px 1px $callout_border_color
+.main-article__callout
+  position: relative
+  height: 100%
+  padding-right: 30px
+  +callout($callout_height: 20px, $callout_width: 20px, $callout_body_color: #fff, $border_color: $callout_border_color, $collout_pos_r: 1.63*$callout_width, $collout_pos_b: -$callout_height, $collout_border_weight: 1px)
+.main-article__header
+  font: normal 30px/24px $LeagueGothic
+  color: #454545
+  text-transform: uppercase
+  letter-spacing: -0.1px
+  word-spacing: -1px
+  position: relative
+.main-article__subheader
+  color: #EDBFFF
+.main-article__text
+  margin-top: 11px
+  font: normal 16px/24px $OpenSansLight
+  color: #454545
+  letter-spacing: -0.07px
+.main-article__text-full
+  display: none
+.main-article__radiogroup
+  display: flex
+  justify-content: space-between
+  margin-top: 23px
+  margin-left: 43%
+.main-article__radio
+  display: flex
+  +custom_radio($radius: 18px, $step: 4px, $outer_border_weight: 1px, $outer_color: #e6e6e6, $outer_bgcolor: #fff, $radius_inner: 12px, $inner_border_weight: 1px, $inner_border_color: #454545, $inner_bg_grad_bottom: #454545, $inner_bg_grad_top: #8a8a8a)
+
+@media all and (max-width: 976px) // 960px - 1px + $scrollbar_width
+  .main-article__wrapper
+    &:before
+      top: 118px
+  .main-article
+    margin-top: 99px
+    width: 78%
+    height: 244px
+  .main-article__callout
+    padding-right: 10px
+    // height: 100%
+    +callout($callout_height: 0px, $callout_width: 20px, $callout_body_color: #fff, $border_color: $callout_border_color, $collout_pos_r: 1.63*$callout_width, $collout_pos_b: -$callout_height, $collout_border_weight: 0px)
+  .main-article__header
+    font-size: 24px
+    letter-spacing: normal
+    width: 90px
+    white-space: pre-wrap
+  .main-article__subheader
+  .main-article__text
+    margin-top: 8px
+  .main-article__radiogroup
+    margin-top: 22px
+    margin-left: 40%
+
+// @media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
+//   .main-article__wrapper 
+//     display: flex
+
+// @media all and (max-width: 496px) // 479px + $scrollbar_width
+//   .main-article__wrapper 
+//     display: flex

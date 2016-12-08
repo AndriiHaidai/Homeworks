@@ -1,0 +1,29 @@
+// @import variables
+// @import mixins
+
+.block__shadow
+  position: relative
+  // z-index: 1
+  &:before
+    content: ""
+    position: absolute
+    z-index: -1
+    box-shadow: 0 0 16px 1px rgba(#000, 0.5)
+    top: 50%
+    bottom: 0
+    left: 1%
+    right: 1%
+    border-radius: 50%/5%
+
+// @media all and (max-width: 976px) // 960px - 1px + $scrollbar_width
+//   .block__shadow
+//     position: relative
+  
+// @media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
+//   .block__shadow
+//     position: relative
+  
+// @media all and (max-width: 496px) // 479px + $scrollbar_width
+//   .block__shadow
+//     position: relative
+//   

@@ -1,0 +1,189 @@
+@import variables
+// @import mixins
+
+.footer
+  display: flex
+  flex-direction: column
+.footer__articles
+  display: flex
+  flex-direction: column
+  height: 396px
+  background-color: #ECECEC
+.footer__wrapper
+  display: flex
+  justify-content: space-between
+  height: 100%
+  align-items: center
+.footer__brand-box
+  width: 29%
+  margin-left: -2px
+  height: 52%
+  overflow: hidden
+  text-shadow: 0px 1px 0 #fff
+  letter-spacing: -0.4px
+.footer__logo
+  display: block
+  padding-top: 0px
+  font: normal 48px/48px $LeagueGothic
+  color: #454545
+.footer__sublogo
+  color: #B9B9B9
+.footer__legal
+  margin-top: 9px
+  font: normal 16px/24px $GeorgiaItalic
+  color: #C5C5C5
+  letter-spacing: -0.1px
+.footer__legal-year
+  font-size: 0.9em
+  letter-spacing: 0.4px
+.footer__legal-details
+  margin-top: 6px
+  font: 16px/24px $OpenSansLight
+  color: #787878
+  letter-spacing: -0.1px
+.footer__news-item,
+.footer__comments-item
+  width: 29%
+  height: 51%
+  padding-left: 4px
+  padding-top: 6px
+  overflow: hidden
+.footer__news-item
+  margin-right: 5px
+.footer__news-header,
+.footer__comments-header
+  font: normal 30px/23px $LeagueGothic
+  color: #454545
+  letter-spacing: -0.2px
+.footer__news-text,
+.footer__comments-text
+  font: normal 16px/24px $OpenSansLight
+  color: #787878
+  margin-top: 11px
+  letter-spacing: -0.1px
+.footer__news-item-2,
+.footer__news-item-3
+  display: none
+
+.footer__bottom-row
+  display: flex
+  height: 114px
+  width: 100%
+  background: url("../img/bg-footer.jpg") center no-repeat
+  z-index: 0
+  &>.row-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.footer__menu
+  width: 526px
+  margin-left: -1px
+  .menu__item
+    font-size: 20px
+    line-height: 34px
+    &::after
+      bottom: 4px
+    &:first-child::after
+      width: 115%
+      left: 0
+    &:hover
+      cursor: pointer
+      &::after
+        border-color: $pink
+
+.designer__claimer 
+  margin-top: 4px
+  font: normal 12px/34px $OpenSansLight
+  color: #FFF
+  text-shadow: 2px 2px 2px rgba(#000, 0.4)
+.designer__link
+  font-family: $OpenSansExtraBold
+  color: #FFF
+  &:hover
+    color: $pink
+
+@media all and (max-width: 976px) // 960px - 1px + $scrollbar_width
+  .footer__news-item
+    width: 28.2%
+    height: 51%
+    padding-left: 0px
+    margin-left: -1px
+    padding-top: 9px // !
+  .footer__news-item
+    margin-right: 0
+  .footer__news-header
+    font-size: 24px
+    line-height: 24px
+  .footer__news-text
+    margin-top: 9px // !
+  .footer__news-item-2,
+  .footer__news-item-3
+    display: block
+    margin-right: -4px
+
+  .footer__bottom-row
+    flex-direction: column
+    height: 201px
+    background: url("../img/bg-footer.768.jpg") center no-repeat
+    &>.row-wrapper
+      height: 100%
+      // .menu
+      //   display: flex
+      //   flex: row nowrap
+      //   justify-content: space-between
+      //   &__item
+      //     position: relative
+      //     font: normal 24px/24px $LeagueGothic
+      //     text-transform: uppercase
+      //     color: #fff
+      //     text-shadow: 2px 2px 1px rgba(#000, 0.4)
+      //     letter-spacing: -0.2px 
+      //     &::after
+      //       content: ""
+      //       position: absolute
+      //       bottom: 13px
+      //       width: 130%
+      //       left: -15%
+      //       border-bottom: 2px solid transparent
+      //     &:last-child::after
+      //       width: 115%
+      //     &:hover
+      //       cursor: pointer
+      //       &::after
+      //         border-color: $pink
+      .footer__menu
+        align-self: flex-start
+        margin-left: -1px
+        margin-top: 41px
+        .menu__item
+          &::after
+            bottom: 4px
+          &:first-child::after
+            width: 115%
+            left: 0
+          &:hover
+            cursor: pointer
+            &::after
+              border-color: $pink
+
+      .designer__claimer
+        align-self: flex-end
+        margin-bottom: 74px
+        margin-right: 2px
+        font: normal 12px/34px $OpenSansLight
+        color: #FFF
+        text-shadow: 2px 2px 2px rgba(#000, 0.4)
+      .designer__link
+        font-family: $OpenSansExtraBold
+        color: #FFF
+        &:hover
+          color: $pink
+
+// @media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
+//   .footer
+//     display: flex
+
+// @media all and (max-width: 496px) // 479px + $scrollbar_width
+//   .footer
+//     display: flex

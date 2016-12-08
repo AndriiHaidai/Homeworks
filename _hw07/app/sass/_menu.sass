@@ -1,0 +1,53 @@
+@import variables
+
+.header__menu
+  margin-top: 74px
+  margin-right: 3px
+  width: 632px
+
+.menu
+  display: flex
+  flex: row nowrap
+  justify-content: space-between
+  &__item
+    position: relative
+    font: normal 24px/24px $LeagueGothic
+    text-transform: uppercase
+    color: #fff
+    text-shadow: 2px 2px 1px rgba(#000, 0.4)
+    letter-spacing: -0.2px 
+    &::after
+      content: ""
+      position: absolute
+      bottom: 13px
+      width: 130%
+      left: -15%
+      border-bottom: 2px solid transparent
+    &:last-child::after
+      width: 115%
+    &:hover
+      cursor: pointer
+      &::after
+        border-color: $pink
+        
+
+@media all and (max-width: 976px) // 960px - 1px + $scrollbar_width
+  .header__menu
+    margin-top: 27px
+    margin-right: 0px
+    margin-left: -2px
+  .menu
+    &__item
+      &::after
+        bottom: -6px
+      &:last-child::after
+        width: 130%
+
+
+// @media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
+//   .menu
+//     display: flex
+
+// @media all and (max-width: 496px) // 479px + $scrollbar_width
+//   .menu
+//     display: flex

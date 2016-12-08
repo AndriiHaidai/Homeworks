@@ -1,0 +1,135 @@
+@import variables
+@import mixins
+
+.header__carousel-row
+  margin-top: 6px
+
+.carousel-row
+  display: flex
+  height: 400px
+  background-color: rgba(#FFF, 0.2)
+  background-size: 100vw 400px
+  &>.row-wrapper
+    height: 100%
+
+.carousel__btn-prev,
+.carousel__btn-next
+  width: calc((100% - #{$mq})/2)
+  height: 100%
+  z-index: 1
+  &:hover
+    opacity: 0.5
+.carousel__btn-prev
+  background: transparent url("../img/ico-prev.png") right 40% center no-repeat
+.carousel__btn-next
+  background: transparent url("../img/ico-next.png") left 40% center no-repeat
+
+.carousel
+  display: flex
+  justify-content: space-between
+  width: 100%
+  &__article
+    margin-top: -2px
+    margin-left: -2px
+  .article
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 54%
+    height: 400px
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3)
+    &__header
+      font: normal 60px/58px $LeagueGothic
+      color: #FEFEFE
+      letter-spacing: -1px
+    &__subheader
+      font: normal 32px/32px $LeagueGothic
+      color: $pink
+      letter-spacing: -0.4px
+      white-space: nowrap
+    &__text
+      margin-top: 5px
+      font: normal 18px/24px $OpenSansLight
+      color: #fff
+      letter-spacing: -0.1px
+  .carousel__image-link
+    display: flex
+    justify-content: center
+    width: 43.5%
+    height: 100%
+  .carousel__image
+    position: relative
+    top: -17px
+    &::before // Не получается вставить блик на мобилку
+      content: ""
+      position: absolute
+      background: url("../img/iphone-splash.png") top center no-repeat
+      z-index: 2
+    &:hover
+      opacity: 0.8
+.carousel__radio-wrapper
+  height: 168px
+  justify-content: flex-end
+.carousel__radio
+  display: flex
+  flex-flow: row nowrap
+  margin-top: 94px
+  margin-right: 162px
+  +custom_radio($radius: 17px, $step: 5px, $outer_border_weight: 1px, $outer_color: $radio_outer_color, $outer_bgcolor: $radio_outer_color, $radius_inner: 11px, $inner_border_weight: 1px, $inner_border_color: #454545, $inner_bg_grad_bottom: #d4d4d4, $inner_bg_grad_top: #fff)
+  
+@media all and (max-width: 976px) // 960px - 1px + $scrollbar_width
+  .media-from960
+    display: none
+  $mq: 768px
+  .media-wrapper
+    width: $mq - 20px -20px // Do not remove this line. Variable is reassigned in this media.
+  .carousel-row
+
+  .carousel__btn-prev,
+  .carousel__btn-next
+    width: calc((100% - #{$mq})/2 + 30px)
+  .carousel__btn-prev
+    background-position: right 2% center
+  .carousel__btn-next
+    background-position: left 2% center
+  .carousel
+    &__article
+      margin-left: 15px
+    .article
+      width: 39%
+      .article__header
+        font-size: 48px
+        line-height: 36px
+        letter-spacing: -0.7px
+      .article__subheader 
+        position: relative
+        top: 6px
+        font-size: 24px
+        line-height: 36px
+      .article__text
+        font-size: 16px
+        .article__text_start
+          line-height: 30px
+    .carousel__image-link
+    .carousel__image
+      position: relative
+      top: -23px
+      right: 2px
+      // &::after
+      //   content: ""
+      //   position: absolute
+      //   background: transparent url("../img/iphone-splash.png") top 1% left 4% no-repeat
+      //   z-index: 2
+  .carousel__radio-wrapper
+  .carousel__radio
+    margin-top: 37px
+    margin-right: 119px
+    // +custom_radio($radius: 17px, $step: 5px, $outer_border_weight: 1px, $outer_color: $radio_outer_color, $outer_bgcolor: $radio_outer_color, $radius_inner: 11px, $inner_border_weight: 1px, $inner_border_color: #454545, $inner_bg_grad_bottom: #d4d4d4, $inner_bg_grad_top: #fff)
+
+@media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
+  .carousel
+    display: flex
+
+@media all and (max-width: 496px) // 479px + $scrollbar_width
+  .carousel
+    display: flex
