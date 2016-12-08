@@ -14,3 +14,6 @@ src/
 gulpfile.js
 lint.yml
 package.json
+.waste/
+*/dist/*
+*.log
