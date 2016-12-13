@@ -4,8 +4,7 @@
 .main-article__wrapper
   display: flex
   flex-direction: column
-  height: 436px
-  width: 47%
+  width: 47.5%
   position: relative
   &:before
     position: absolute
@@ -15,18 +14,16 @@
     z-index: 1
 .main-article
   position: relative
-  margin-top: 102px
   margin-left: 23px
-  padding-left: 38px
-  padding-top: 30px
-  height: 239px
-  width: 85%
+  padding-top: 132px
   padding-right: 8px
+  padding-left: 38px
+  width: 85%
   box-shadow: 0 1px 1px $callout_border_color
 .main-article__callout
   position: relative
-  height: 100%
   padding-right: 30px
+  padding-bottom: 36px
   +callout($callout_height: 20px, $callout_width: 20px, $callout_body_color: #fff, $border_color: $callout_border_color, $collout_pos_r: 1.63*$callout_width, $collout_pos_b: -$callout_height, $collout_border_weight: 1px)
 .main-article__header
   font: normal 30px/24px $LeagueGothic
@@ -47,22 +44,26 @@
 .main-article__radiogroup
   display: flex
   justify-content: space-between
-  margin-top: 23px
-  margin-left: 43%
+  margin-top: 24px
+  margin-left: 42.5%
+  margin-bottom: 72px
 .main-article__radio
   display: flex
   +custom_radio($radius: 18px, $step: 4px, $outer_border_weight: 1px, $outer_color: #e6e6e6, $outer_bgcolor: #fff, $radius_inner: 12px, $inner_border_weight: 1px, $inner_border_color: #454545, $inner_bg_grad_bottom: #454545, $inner_bg_grad_top: #8a8a8a)
 
 @media all and (max-width: 976px) // 960px - 1px + $scrollbar_width
   .main-article__wrapper
+    padding-top: 97px
     &:before
-      top: 118px
+      top: 117px
   .main-article
-    margin-top: 99px
+    // margin-top: -4px
+    padding-top: 31px
     width: 78%
-    height: 244px
+    // height: 244px
   .main-article__callout
-    padding-right: 10px
+    padding-right: 13px
+    padding-bottom: 43px
     // height: 100%
     +callout($callout_height: 0px, $callout_width: 20px, $callout_body_color: #fff, $border_color: $callout_border_color, $collout_pos_r: 1.63*$callout_width, $collout_pos_b: -$callout_height, $collout_border_weight: 0px)
   .main-article__header
@@ -74,13 +75,94 @@
   .main-article__text
     margin-top: 8px
   .main-article__radiogroup
-    margin-top: 22px
-    margin-left: 40%
+    margin-top: 23px
+    margin-left: 39.8%
 
-// @media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
-//   .main-article__wrapper 
-//     display: flex
+@media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
+  .main-article__wrapper
+    padding-top: 40px
+    width: 100%
+    &:before
+      left: -1px
+      top: 87px
+  .main-article
+    margin-top: 0px
+    margin-left: 24px
+    padding-left: 0
+    padding-top: 0
+    height: auto
+    width: calc(100% - 24px)
+    padding-right: 0px
+  .main-article__callout
+    padding-top: 30px
+    padding-right: 30px
+    padding-bottom: 33px
+    padding-left: 38px
+  .main-article__header
+    padding-top: 30px
+    font-size: 30px
+    line-height: 24px
+    letter-spacing: -0.1px
+    white-space: nowrap
+  .main-article__subheader
+  .main-article__text
+    margin-top: 16px
+    font-size: 16px
+    line-height: 24px
+    height: 168px
+    overflow: hidden
+    .media-from960
+      display: inline
+  .main-article__text-full
+  .main-article__radiogroup
+    margin-top: 23px
+    margin-left: 42%
+    margin-bottom: 0
+  .main-article__radio
 
-// @media all and (max-width: 496px) // 479px + $scrollbar_width
-//   .main-article__wrapper 
-//     display: flex
+@media all and (max-width: 496px) // 479px + $scrollbar_width
+  .hidden-in-media320
+    display: none
+  .main-article__wrapper
+    // padding-top: 40px
+    // width: 100%
+    &:before
+      // left: -1px
+      // top: 87px
+  .main-article
+    // margin-top: 0px
+    // margin-left: 24px
+    // padding-left: 0
+    // padding-top: 0
+    // height: auto
+    // width: calc(100% - 24px)
+    // padding-right: 0px
+  .main-article__callout
+    // padding-top: 30px
+    padding-right: 36px
+    padding-bottom: 27px
+    // padding-left: 38px
+  .main-article__header
+    // display: block
+    padding-top: 24px
+    font-size: 24px
+    margin-left: -3px
+    // width: auto
+    // line-height: 24px
+    // letter-spacing: -0.1px
+    white-space: pre-wrap
+  .main-article__subheader
+  .main-article__text
+    margin-top: 4px
+    // font-size: 16px
+    // line-height: 24px
+    // height: 168px
+    // overflow: hidden
+    .media-from960
+      // display: inline
+  .main-article__text-full
+  .main-article__radiogroup
+    // margin-top: 23px
+    margin-left: 43%
+    // margin-bottom: 0
+  .main-article__radio

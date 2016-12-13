@@ -1,10 +1,9 @@
 @import variables
-// @import mixins
 
 .sponsors
   display: flex
   box-sizing: border-box
-  height: 122px
+  padding: 23px 0
   border-top: 1px solid #E6E6E6 
   border-bottom: 1px solid #d8d8d8
   &>.row-wrapper
@@ -49,10 +48,45 @@
   .sponsor__logo-1 
     margin-left: -1px
 
-// @media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
-//   .sponsors
-//     display: flex
+@media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
+  .sponsors
+    height: auto
+    padding: 0
+  .sponsor__logos
+    justify-content: flex-start
+    flex-wrap: wrap
+    margin: 34px 0 39px
+  .sponsor__logo-1 
+    margin: 0 0 0 13.8%
+  .sponsor__logo-2
+    margin: 0 0 0 11.5%
+  .sponsor__logo-3
+    margin: 1px 1% 0 11.5%
+  .sponsor__logo-4
+    margin: 22px 0 0 10.3%
+  .sponsor__logo-5
+    margin: 22px 0 0 12.3%
+  .sponsor__logo-6
+    margin: 22px 0 0 11.8%
 
-// @media all and (max-width: 496px) // 479px + $scrollbar_width
-//   .sponsors
-//     display: flex
+@media all and (max-width: 496px) // 479px + $scrollbar_width
+  .sponsors
+    // height: auto
+    // padding: 0
+    border-bottom: none
+  .sponsor__logos
+    // justify-content: flex-start
+    // flex-wrap: wrap
+    margin: 50px 0 74px
+  .sponsor__logo-1 
+    margin: 0 0 0 14%
+  .sponsor__logo-2
+    margin: 0 0 0 18.4%
+  .sponsor__logo-3
+    margin: 57px 1% 0 17%
+  .sponsor__logo-4
+    margin: 57px 0 0 20.7%
+  .sponsor__logo-5
+    margin: 39px 0 0 7%
+  .sponsor__logo-6
+    margin: 39px 0 0 18.6%

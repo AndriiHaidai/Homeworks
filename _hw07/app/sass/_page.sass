@@ -5,7 +5,7 @@
   margin: auto
   
   &__header
-    background: url("../img/bg.jpg") center top no-repeat
+    background: url("../img/bg.jpg") top center no-repeat
     height: 846px
 
 .row-wrapper
@@ -18,7 +18,7 @@
 @media all and (max-width: 976px) // 960px - 1px + $scrollbar_width
   $mq: 768px
   .page
-    background-color: green
+    background-color: lightgreen
     &__header
       height: 798px
     .media-wrapper
@@ -27,7 +27,7 @@
 @media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
   $mq: 480px
   .page
-    background-color: yellow
+    background-color: lightyellow
     &__header
       height: 548px
     .media-wrapper
@@ -36,8 +36,8 @@
 @media all and (max-width: 496px) // 480px - 1px + $scrollbar_width
   $mq: 320px
   .page
-    background-color: red
+    background-color: lightred
     &__header
       height: 516px
     .media-wrapper
-      width: 280px //$mq - 20px -20px // Do not remove this line. Variable is reassigned in this media.
+      width: $mq - 40px  //$mq - 20px -20px // Do not remove this line. Variable is reassigned in this media.

@@ -1,25 +1,20 @@
 @import variables
-// @import mixins
 
 .main__claims
 
 .claims
   display: flex
-  height: 343px
-  width: 100%
+  padding: 76px 0 67px
   box-sizing: border-box
   background: #322539 linear-gradient(to top, #322539, #745083)
-  border-top: 0
   box-shadow: inset 0 1px 0 0 #33253a, inset 0 -1px 0 0 #fff, inset 0 -2px 0 0 #0d151b, inset 0 -3px 0 0 #1d2f37
-  &>.wrapper
+  &>.row-wrapper
     display: flex
     height: 100%
 .claims__wrapper
   display: flex
   flex-direction: row
   justify-content: space-between
-  height: 204px
-  margin-top: 13px
 
 .claim
   display: flex
@@ -43,7 +38,7 @@
   align-self: flex-end
   padding-top: 17px
   padding-right: 1%
-  font: 300 19px/24px $LeagueGothic
+  font: normal 19px/24px $LeagueGothic
   color: #fff
   letter-spacing: -0.5px
   transition: all 0.1s
@@ -53,7 +48,7 @@
     padding-right: 2%
     font: normal 18px/24px $LeagueGothic
     letter-spacing: -0.1px
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8)
 .claim-1
   background: url("../img/ico-tool.png") 2px 7px no-repeat
   margin-left: 6px
@@ -65,47 +60,81 @@
 
 @media all and (max-width: 976px) // 960px - 1px + $scrollbar_width
   .claims
-  .claims__wrapper
-    height: 204px
-    margin-top: 13px
-    .claim
-      width: 29%
-    .claim__header
-      position: relative
-      top: 2px
-      left: -2px
-      font-size: 24px
-      line-height: 24px
-      letter-spacing: -0.2px
-    .claim__text
-      display: block
-      height: 145px
-      padding-left: 56px
-      padding-top: 6px
-      margin-top: -1px
-      .media-from960
-        display: none
-    .claim__link
-      padding-top: 4px
+    padding: 76px 0 66px
+  .claim
+    width: 29%
+  .claim__header
+    position: relative
+    top: 2px
+    left: -2px
+    font-size: 24px
+    line-height: 24px
+    letter-spacing: -0.2px
+  .claim__text
+    display: inline
+    height: 145px
+    padding-left: 56px
+    padding-top: 6px
+    margin-top: -1px
+    .media-from960
+      display: none
+  .claim__link
+    padding-top: 4px
+    padding-right: 5%
+    &:hover
+      padding-top: 5px
       padding-right: 5%
-      &:hover
-        padding-top: 5px
-        padding-right: 5%
-    .claim-1
-      background: url("../img/ico-tool.png") 3px 3px no-repeat
-      .claim__link
-        padding-right: 4%
-    .claim-2
-      background: url("../img/ico-tool.png") 3px 3px no-repeat
-      margin-left: -11px
-    .claim-3
-      background: url("../img/ico-tool.png") 3px 3px no-repeat
-      margin-right: -3px
+  .claim-1
+    background: url("../img/ico-tool.png") 3px 3px no-repeat
+    .claim__link
+      padding-right: 4%
+  .claim-2
+    background: url("../img/ico-tool.png") 3px 3px no-repeat
+    margin-left: -11px
+  .claim-3
+    background: url("../img/ico-tool.png") 3px 3px no-repeat
+    margin-right: -3px
 
 @media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
   .claims
-    display: flex
+    padding: 58px 0 68px
+  .claims__wrapper
+    flex-direction: column
+  .claim
+    width: 100%
+  .claim__text
+    height: 70px
+    letter-spacing: -0.1px
+    overflow: hidden
+    .media-from960
+      display: inline
+  .claim__link
+    padding-top: 15px
+    padding-right: 3%
+    transition: all 0.1s
+    &:hover
+      padding-top: 15px
+      padding-right: 3%
+      font-size: 19px
+      letter-spacing: -0.5px
+  .claim-1
+    margin-left: 7px
+    margin-top: 18px
+    .claim__link
+      padding-right: 3%
+  .claim-2
+    margin-left: 7px
+    margin-top: 19px
+  .claim-3
+    margin-left: 7px
+    margin-top: 23px
 
 @media all and (max-width: 496px) // 479px + $scrollbar_width
   .claims
-    display: flex
+    padding: 51px 0 63px
+  .claims__wrapper
+    margin-right: 2%
+  .claim
+    margin-left: 6px
+  .claim-3
+    margin-top: 35px
