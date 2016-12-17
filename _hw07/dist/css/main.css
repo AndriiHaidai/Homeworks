@@ -59,28 +59,32 @@ a {
 /* End of Reset file */
 @font-face {
   font-family: 'LeagueGothic';
-  src: url("../fonts/leaguegothicregular.woff2") format("woff2"), url("../fonts/leaguegothicregular.woff") format("woff"), url("../fonts/leaguegothicregular.ttf") format("truetype");
+  src: url("../fonts/leaguegothicregular.eot");
+  src: url("../fonts/leaguegothicregular.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothicregular.woff2") format("woff2"), url("../fonts/leaguegothicregular.woff") format("woff"), url("../fonts/leaguegothicregular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSansLight';
-  src: url("../fonts/opensans-light.woff2") format("woff2"), url("../fonts/opensans-light.woff") format("woff"), url("../fonts/opensans-light.ttf") format("truetype");
+  src: url("../fonts/opensans-light.eot");
+  src: url("../fonts/opensans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light.woff2") format("woff2"), url("../fonts/opensans-light.woff") format("woff"), url("../fonts/opensans-light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSansExtraBold';
-  src: url("../fonts/opensans-extrabold.woff2") format("woff2"), url("../fonts/opensans-extrabold.woff") format("woff"), url("../fonts/opensans-extrabold.ttf") format("truetype");
+  src: url("../fonts/opensans-extrabold.eot");
+  src: url("../fonts/opensans-extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-extrabold.woff2") format("woff2"), url("../fonts/opensans-extrabold.woff") format("woff"), url("../fonts/opensans-extrabold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'GeorgiaItalic';
-  src: url("../fonts/georgia_italic.woff2") format("woff2"), url("../fonts/georgia_italic.woff") format("woff"), url("../fonts/georgia_italic.ttf") format("truetype");
+  src: url("../fonts/georgia_italic.eot");
+  src: url("../fonts/georgia_italic.eot?#iefix") format("embedded-opentype"), url("../fonts/georgia_italic.woff2") format("woff2"), url("../fonts/georgia_italic.woff") format("woff"), url("../fonts/georgia_italic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -111,9 +115,6 @@ a {
 }
 
 @media all and (max-width: 976px) {
-  .page {
-    background-color: lightgreen;
-  }
   .page__header {
     height: 798px;
   }
@@ -123,9 +124,6 @@ a {
 }
 
 @media all and (max-width: 784px) {
-  .page {
-    background-color: lightyellow;
-  }
   .page__header {
     height: 548px;
   }
@@ -135,9 +133,6 @@ a {
 }
 
 @media all and (max-width: 496px) {
-  .page {
-    background-color: lightred;
-  }
   .page__header {
     height: 516px;
   }
