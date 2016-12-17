@@ -1,0 +1,214 @@
+@import variables
+
+.footer
+  display: flex
+  flex-direction: column
+.footer__articles
+  display: flex
+  flex-direction: column
+  padding-top: 95px
+  padding-bottom: 92px
+  background-color: #ECECEC
+  text-shadow: 0px 1px 0 #fff
+.footer__wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+.footer__brand-box
+  width: 29%
+  margin-left: -2px
+  height: 52%
+  overflow: hidden
+  letter-spacing: -0.4px
+.footer__logo
+  display: block
+  padding-top: 0px
+  font: normal 48px/48px $LeagueGothic
+  color: #454545
+.footer__sublogo
+  color: #B9B9B9
+.footer__legal
+  margin-top: 9px
+  font: normal 16px/24px $GeorgiaItalic
+  color: #C5C5C5
+  letter-spacing: -0.1px
+.footer__legal-year
+  font-size: 0.9em
+  letter-spacing: 0.4px
+.footer__legal-details
+  margin-top: 6px
+  height: 120px
+  font: 16px/24px $OpenSansLight
+  color: #787878
+  letter-spacing: -0.1px
+.footer__comments-item,
+.footer__news-item
+  width: 29%
+  padding-left: 4px
+  padding-top: 5px
+  overflow: hidden
+.footer__news-item
+  margin-right: 5px
+.footer__comments-header,
+.footer__news-header
+  font: normal 30px/23px $LeagueGothic
+  color: #454545
+  letter-spacing: -0.2px
+.footer__comments-text,
+.footer__news-text
+  height: 170px
+  margin-top: 11px
+  font: normal 16px/24px $OpenSansLight
+  color: #787878
+  letter-spacing: -0.1px
+  overflow: hidden
+.footer__news-item-2,
+.footer__news-item-3
+  display: none
+
+.footer__bottom-row
+  display: flex
+  height: 114px
+  width: 100%
+  background: url("../img/bg-footer.jpg") center no-repeat
+  z-index: 0
+  &>.row-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.footer__menu
+  width: 526px
+  margin-left: -1px
+  .menu__item
+    font-size: 20px
+    line-height: 34px
+    &::after
+      bottom: 4px
+    &:first-child::after
+      width: calc(100% + 6px) //115%
+      left: 0
+    &:hover
+      cursor: pointer
+      &::after
+        border-color: $pink
+
+.designer__claimer 
+  margin-top: 4px
+  font: normal 12px/34px $OpenSansLight
+  color: #FFF
+  text-shadow: 2px 2px 2px rgba(#000, 0.4)
+.designer__link
+  font-family: $OpenSansExtraBold
+  color: #FFF
+  &:hover
+    color: $pink
+
+@media all and (max-width: 976px) // 960px - 1px + $scrollbar_width
+  .footer__articles
+    padding-top: 3px
+  .footer__news-item
+    width: 28.2%
+    padding-left: 0px
+    margin-left: -1px
+    padding-top: 100px // !
+    margin-right: 0
+    // 
+  .footer__news-header
+    font-size: 24px
+    line-height: 24px
+  .footer__news-text
+    margin-top: 9px // !
+    height: 170px
+  .footer__news-item-2,
+  .footer__news-item-3
+    display: block
+    margin-right: -4px
+    // 
+  .footer__bottom-row
+    flex-direction: column
+    height: 201px
+    background: url("../img/bg-footer.768.jpg") center no-repeat
+    &>.row-wrapper
+      height: 100%
+  .footer__menu
+    display: flex
+    flex: row nowrap
+    justify-content: space-between
+    align-self: flex-start
+    margin-left: -1px
+    margin-top: 41px
+    .menu__item
+      font-size: 20px
+      line-height: 34px
+  .designer__claimer
+    align-self: flex-end
+    margin-bottom: 74px
+    margin-right: 2px
+    font: normal 12px/34px $OpenSansLight
+    color: #FFF
+    text-shadow: 2px 2px 2px rgba(#000, 0.4)
+  .designer__link
+    font-family: $OpenSansExtraBold
+    color: #FFF
+    &:hover
+      color: $pink
+
+@media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
+  .footer
+    margin-top: 83px //++
+  .footer__articles
+    height: auto
+    padding-top: 27px
+    padding-top: 0
+    padding-bottom: 83px
+  .footer__wrapper
+    flex-direction: column
+  .footer__news-item
+    width: 100%
+    padding-top: 0
+    margin-top: 52px
+    margin-left: -5px
+  .footer__news-header
+    letter-spacing: -0.1px
+  .footer__news-text
+    height: 100px
+    overflow: hidden
+  .footer__news-item-1
+    margin-top: 79px
+  .footer__news-item-2
+    margin-left: -8px
+  .footer__news-item-3
+    margin-left: -9px
+    margin-top: 55px
+  
+  .footer__bottom-row
+    height: 201px
+    background: url("../img/bg-footer.480.jpg") top center no-repeat
+    &>.row-wrapper
+      justify-content: center
+  
+  .footer__menu
+    width: 98.6%
+    margin-right: 0.3%
+    margin-top: 40px
+    .menu__item
+      font-size: 20px
+      line-height: 34px
+      &::after
+      &:first-child::after
+      &:hover
+        &::after
+
+@media all and (max-width: 496px) // 479px + $scrollbar_width
+  .footer
+  .footer__articles
+    display: none
+  .footer__bottom-row
+    &>.row-wrapper
+  .footer__menu
+    display: none
+  .designer__claimer
+    margin-top: 30px
+    margin-bottom: auto
+  .designer__link

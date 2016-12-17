@@ -1,0 +1,247 @@
+@import variables
+@import mixins
+
+.header__carousel-row
+  margin-top: 6px
+
+.carousel-row
+  display: flex
+  height: 400px
+  background-color: rgba(#FFF, 0.2)
+  background-size: 100vw 400px
+  &>.row-wrapper
+    height: 100%
+
+.carousel__btn-prev,
+.carousel__btn-next
+  width: calc((100% - #{$mq})/2)
+  height: 100%
+  z-index: 1
+  &:hover
+    opacity: 0.5
+.carousel__btn-prev
+  background: transparent url("../img/ico-prev.png") right 40% center no-repeat
+.carousel__btn-next
+  background: transparent url("../img/ico-next.png") left 40% center no-repeat
+
+.carousel
+  display: flex
+  justify-content: space-between
+  width: 100%
+  &__article
+    margin-top: -2px
+    margin-left: -2px
+  .article
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 54%
+    height: 400px
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3)
+    &__header
+      font: normal 60px/58px $LeagueGothic
+      color: #FEFEFE
+      letter-spacing: -1px
+    &__subheader
+      font: normal 32px/32px $LeagueGothic
+      color: $pink
+      letter-spacing: -0.3px
+      white-space: nowrap
+    &__text
+      margin-top: 5px
+      font: normal 18px/24px $OpenSansLight
+      color: #fff
+      letter-spacing: -0.1px
+  .carousel__image-link
+    display: none
+  .carousel__image-link.media-from768
+    display: flex
+    justify-content: center
+    width: 43.5%
+    height: 100%
+  .carousel__image
+    position: relative
+    top: -17px
+    &::before // Не получается вставить блик на мобилку
+      content: ""
+      position: absolute
+      background: url("../img/iphone-splash.png") top center no-repeat
+      z-index: 2
+    &:hover
+      opacity: 0.8
+.carousel__radio-wrapper
+  height: 168px
+  justify-content: flex-end
+.carousel__radio
+  display: flex
+  flex-flow: row nowrap
+  margin-top: 94px
+  margin-right: 162px
+  +custom_radio($radius: 17px, $step: 5px, $outer_border_weight: 1px, $outer_color: $radio_outer_color, $outer_bgcolor: $radio_outer_color, $radius_inner: 11px, $inner_border_weight: 1px, $inner_border_color: #454545, $inner_bg_grad_bottom: #d4d4d4, $inner_bg_grad_top: #fff)
+  
+@media all and (max-width: 976px) // 960px - 1px + $scrollbar_width
+  .media-from960
+    display: none
+  $mq: 768px
+  .media-wrapper
+    width: $mq - 20px -20px // Do not remove this line. Variable is reassigned in this media.
+  .carousel-row
+
+  .carousel__btn-prev,
+  .carousel__btn-next
+    width: calc((100% - #{$mq})/2 + 30px)
+  .carousel__btn-prev
+    background-position: right 2% center
+  .carousel__btn-next
+    background-position: left 2% center
+  .carousel
+    &__article
+      margin-left: 15px
+    .article
+      width: 39%
+    .article__header
+      font-size: 48px
+      line-height: 36px
+      letter-spacing: -0.7px
+    .article__subheader 
+      position: relative
+      top: 6px
+      font-size: 24px
+      line-height: 36px
+    .article__text
+      font-size: 16px
+      .article__text_start
+        line-height: 30px
+    .carousel__image-link
+    .carousel__image
+      position: relative
+      top: -23px
+      right: 2px
+  .carousel__radio-wrapper
+  .carousel__radio
+    margin-top: 37px
+    margin-right: 119px
+
+@media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
+  $mq: 480px
+  .media-from768
+    display: none
+  .header__carousel-row
+    margin-top: 87px
+  .carousel-row
+    height: 246px
+  .carousel__btn-prev,
+  .carousel__btn-next
+    width: calc((100% - #{$mq})/2)
+    &:hover
+  .carousel__btn-prev
+    background-position: right center
+  .carousel__btn-next
+    background-position: left center
+
+  .carousel
+    &__article
+      margin-left: 19px
+    .article
+      justify-content: flex-start
+      width: 47%
+      overflow: hidden
+      height: 246px
+      &__header
+        margin-top: 95px
+        font-size: 36px
+        line-height: 36px
+        letter-spacing: -0.5px
+      &__subheader
+        margin-top: -7px
+        font-size: 19px
+        line-height: 24px
+        letter-spacing: -0.5px
+      &__text
+        display: none
+    .carousel__image-link.media-from768
+      display: none
+    .carousel__image-link 
+      display: flex
+      width: 45.8%
+    .carousel__image
+      top: -9px
+      /* &::before // Не получается вставить блик на мобилку
+        content: ""
+        position: absolute
+        background: url("../img/iphone-splash.png") top center no-repeat
+        z-index: 2 */
+  .carousel__radio-wrapper
+  .carousel__radio
+    margin-top: 23px
+    margin-right: 170px
+    +custom_radio($radius: 16px, $step: 6px, $outer_border_weight: 1px, $outer_color: $radio_outer_color, $outer_bgcolor: $radio_outer_color, $radius_inner: 12px, $inner_border_weight: 1px, $inner_border_color: #454545, $inner_bg_grad_bottom: #d4d4d4, $inner_bg_grad_top: #fff)
+
+@media all and (max-width: 496px) // 479px + $scrollbar_width
+  $mq: 320px
+  // .media-wrapper
+  //   width: $mq - 20px - 20px - 30px - 30px// Do not remove this line. Variable is reassigned in this media.
+  .media-from768
+    // display: none
+  .header__carousel-row
+    // margin-top: 87px
+    margin-left: 0
+    margin-right: 0
+  .carousel-row
+    // height: 246px
+    height: 205px
+    background: none
+  .carousel__btn-prev,
+  .carousel__btn-next
+    width: calc((100% - (#{$mq} - 60px))/2)
+  .carousel__btn-prev
+    background-position: right top 102px
+  .carousel__btn-next
+    background-position: left top 102px
+
+  .carousel
+    &__article
+      // margin-left: 19px
+    .article
+      // justify-content: flex-start
+      // width: 47%
+      width: auto
+      // overflow: hidden
+      // height: 246px
+      margin-left: 14%
+      margin-top: -1px
+      &__header
+        // margin-top: 95px
+        // font-size: 36px
+        // line-height: 36px
+        letter-spacing: -0.4px
+        white-space: nowrap
+      &__subheader
+        // margin-top: -7px
+        // font-size: 19px
+        // line-height: 24px
+        // letter-spacing: -0.5px
+      &__text
+        // display: none
+    .carousel__image-link.media-from768
+      // display: none
+    .carousel__image-link
+      // display: flex
+      // width: 45.8%
+      display: none
+    .carousel__image
+      // top: -9px
+      /* &::before // Не получается вставить блик на мобилку
+        content: ""
+        position: absolute
+        background: url("../img/iphone-splash.png") top center no-repeat
+        z-index: 2 */
+  .carousel__radio-wrapper
+    // justify-content: center
+    display: flex
+    align-content: center
+    margin-right: 4%
+  .carousel__radio
+    // margin-top: 23px
+    // margin-right: 170px
+    // +custom_radio($radius: 16px, $step: 6px, $outer_border_weight: 1px, $outer_color: $radio_outer_color, $outer_bgcolor: $radio_outer_color, $radius_inner: 12px, $inner_border_weight: 1px, $inner_border_color: #454545, $inner_bg_grad_bottom: #d4d4d4, $inner_bg_grad_top: #fff)

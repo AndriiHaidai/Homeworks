@@ -1,0 +1,114 @@
+@import variables
+
+.updates
+  display: flex
+  flex-direction: column
+  width: 47%
+  // height: 70%
+  margin-top: 132px
+  color: #454545
+.updates__block-header
+  margin-left: -0.5px
+  font: normal 30px/24px $LeagueGothic
+  text-transform: uppercase
+  word-spacing: -2px
+.updates__item
+  display: flex
+  flex-direction: column
+  padding-top: 20px
+.updates__item-1
+  background: url("../img/ico-blog1.960.png") 1px 18px no-repeat
+.updates__item-2
+  padding-top: 19px
+  background: url("../img/ico-blog2.960.png") 1px 17px no-repeat
+.updates__item-3
+  padding-top: 16px
+  background: url("../img/ico-blog3.960.png") 1px 14px no-repeat
+.updates__header
+  padding-left: 66px
+  font: normal 16px/20px $OpenSansExtraBold
+.updates__meta
+  padding-left: 66px
+  font: normal 16px/28px $OpenSansLight
+  letter-spacing: -0.1px 
+.updates__link
+  align-self: flex-end
+  width: 85px
+  margin-right: 4.5%
+  margin-top: 19px
+  white-space: nowrap
+  overflow: hidden
+  font: normal 19px/24px $LeagueGothic
+  color: #454545
+  text-transform: uppercase
+  letter-spacing: -0.5px
+  &:hover
+    opacity: 0.7
+
+@media all and (max-width: 976px) // 960px - 1px + $scrollbar_width
+  .updates
+    width: 46%
+    margin-top: 132px
+    margin-right: -1px
+  .updates__block-header
+  .updates__item
+  .updates__item-1
+    background: url("../img/ico-blog1.768.png") 0px 18px no-repeat
+  .updates__item-2
+    padding-top: 20px // !
+    background: url("../img/ico-blog2.768.png") 0px 18px no-repeat
+  .updates__item-3
+    padding-top: 18px // !
+    background: url("../img/ico-blog3.768.png") 0px 16px no-repeat
+  .updates__link
+    width: 90px
+    margin-right: 2%
+    margin-top: 16px
+
+@media all and (max-width: 784px) // 768px - 1px + $scrollbar_width
+  .updates
+    width: 86%
+    height: auto
+    margin-top: 52px
+    margin-left: 14.3%
+  .updates__block-header
+  .updates__item
+  .updates__item-1
+    background: url("../img/ico-blog1.480.png") 1px 18px no-repeat
+  .updates__item-2
+    padding-top: 20px
+    background: url("../img/ico-blog2.480.png") 1px 18px no-repeat
+  .updates__item-3
+    background: url("../img/ico-blog3.480.png") 1px 16px no-repeat
+  .updates__header
+  .updates__meta
+  .updates__link
+    margin-right: 10.5%
+    &:hover
+
+@media all and (max-width: 496px) // 479px + $scrollbar_width
+  .updates
+    width: auto
+    margin-left: -1px
+  .updates__block-header
+  .updates__item
+  .updates__item-1
+    background: url("../img/ico-blog1.320.png") 0 18px no-repeat
+  .updates__item-2
+    padding-top: 17px
+    background: url("../img/ico-blog2.320.png") 0 15px no-repeat
+  .updates__item-3
+    padding-top: 23px
+    background: url("../img/ico-blog3.320.png") 0 21px no-repeat
+  .updates__header
+    width: 155px
+    white-space: nowrap
+    overflow: hidden
+  .updates__meta
+    width: 215px
+    white-space: nowrap
+    overflow: hidden
+  .updates__link
+    margin-top: 14px
+    margin-right: 2%
+    &:hover
